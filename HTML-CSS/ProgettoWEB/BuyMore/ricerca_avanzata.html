@@ -1,0 +1,104 @@
+<!-- HTML 5 -->
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset=utf-8" />
+	<title> Ricerca Avanzata </title>
+    <link rel="stylesheet" type="text/css" href="style.css" /> <!--  per importare il css -->
+</head>
+
+<body>
+		<header id="BANNER"> <!--intestazione -->
+			<!--logo -->
+			<a href="index.html">
+				<img class="LOGO" src="immagini/logo.png" />	
+			</a>
+			
+			<!-- form per la ricerca di un articolo -->
+			<form action="s_cercaProdotto" method="get">
+				<!-- selezione -->
+				<select class="SELEZIONE_RICERCA" name="prodotti">
+                	<option value="tutteLeCategorie" selected="selected">Tutte le Categorie</option>
+                    <option value="monitor">Monitor</option>
+                    <option value="notebook">Notebook</option>
+                    <option value="hd">Hard Disk</option>
+                </select>
+                
+                <!--testo ricerca -->
+                <input class="TESTO_RICERCA" type="search" name="testoRicerca" />
+                
+                <!-- bottone ricerca -->
+                <button class="BOTTONE_INVIO" type="submit">
+                    Cerca
+                </button>
+                
+                <p class="LOGIN">
+           			Benvenuto! 
+               		 <a href="accesso.html"> Accedi </a>
+	            	o
+                	<a href="registrazione.html"> Registrazione</a>
+   	    		</p>
+                
+                <p class="RICERCA-AVANZATA">
+           		<a href="ricerca_avanzata.html"> Ricerca Avanzata </a>
+   	    	</p>
+			</form>	
+   	    	
+		</header> <!-- end intestazione -->
+		<hr />
+		
+        
+        
+		<div id="RICERCA_AVANZATA">  <!-- inizio contenuto -->
+         	<h1 class="TITOLO"> Ricerca Avanzata </h1>
+            
+            <br />
+            <br />
+            
+         	<div id="RICERCA">
+            	<form action="s_ricercaAvanzata" method="get">
+			  	<fieldset class="GRANDEZZA_RICERCA">
+			  		<legend> Ricerca </legend>
+			  		
+			  		<span class="FONT_RICHIESTE"> Marca: </span>   <br />
+	          		<input class="TESTO_DATI_RICHIESTE" type="text" name="marca" />
+	                
+                    <button class="BOTTONE_RICERCA_MARCA" type="submit">
+	              		Cerca
+	            	</button>
+	           		<br />
+	            	<br />
+	            	<br />
+	                
+					<span class="FONT_RICHIESTE"> Codice: </span>   <br />
+	            	<input class="TESTO_DATI_RICHIESTE" type="text" name="codice" />
+	                
+                    <button class="BOTTONE_RICERCA_CODICE" type="submit">
+	              		Cerca
+	            	</button>
+	            	<br />
+	            	<br />
+	          		<br />
+	                      
+                    <span class="FONT_RICHIESTE"> Prezzo: </span>   <br />
+	            	<input class="TESTO_DATI_RICHIESTE" type="text" name="prezzo" />
+	                
+                    <button class="BOTTONE_RICERCA_PREZZO" type="submit">
+	              		Cerca
+	            	</button>
+	            	<br />
+	            	<br />
+	          		<br />         	
+	              
+	            </fieldset>         
+       		</form>
+      	</div>
+    </div>              
+        
+        <footer id="FOOTER"> <!-- inizio pie di pagina -->
+			<p class="FOO">Copyright &copy; 2013 Simone Boioli </p>
+		</footer> <!--fine pie di pagina -->
+</body>
+</html>

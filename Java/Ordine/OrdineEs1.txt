@@ -1,0 +1,9 @@
+-Si considera il sistema informativo di un negozio di alimentari
+-classe prodotto e una gerarchia di classi che estendono prodotto: Biscotti ,pane,verdura,..
+-classe Ordine che memorizza il prezzo(int) di un ordinazione man mano
+ che si aggiungono dei prodottti con il metodo aggiungiProdotto, e memorizza la destrizione facendo
+ uso di un oggetto di classe Descrizione
+-un oggetto di tipo Descrizione incapsula una stringa, ottenuta per concatenazioni successive delle rappreentazioni
+ testuali degli oggetto passati al metodo append
+-si realizzi un caso di test che crea alcuni prodotti, li aggiunge a un ordine e verifica la correttezza del
+ prezzo e della descrizione

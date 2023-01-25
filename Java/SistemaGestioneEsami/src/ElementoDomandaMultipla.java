@@ -1,0 +1,26 @@
+
+public class ElementoDomandaMultipla {
+	private String testoItem;
+	private double valutazione;
+	
+	public ElementoDomandaMultipla(String testoItem, double valutazione) {
+		this.testoItem = testoItem;
+		this.valutazione = valutazione;
+	}
+	
+	public ElementoDomandaMultipla(){
+		this("risposta di default", 0.0);
+	}
+
+	public String getTestoItem() {
+		return testoItem;
+	}
+
+	public double getValutazione() {
+		return valutazione;
+	}
+	
+	
+	
+	
+}

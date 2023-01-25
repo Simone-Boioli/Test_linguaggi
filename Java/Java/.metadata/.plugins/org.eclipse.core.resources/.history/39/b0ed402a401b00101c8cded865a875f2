@@ -1,0 +1,18 @@
+import junit.framework.TestCase;
+
+
+public class TestBancomat extends TestCase {
+
+	public void testInserisciCarta() {
+		fail("Not yet implemented");
+	}
+
+	public void testPrelievo() {
+		fail("Not yet implemented");
+	}
+
+	public void testToString() {
+		fail("Not yet implemented");
+	}
+
+}

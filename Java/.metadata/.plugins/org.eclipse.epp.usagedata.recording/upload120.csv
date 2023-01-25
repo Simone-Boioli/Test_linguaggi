@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui",1265123728109
+started,bundle,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui",1265123728234
+started,bundle,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console",1265123728234
+started,bundle,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.editors",1265123728234
+started,bundle,org.eclipse.ui.forms,3.4.1.v20090714_35x,"org.eclipse.ui.forms",1265123728359
+started,bundle,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.ide",1265123728421
+started,bundle,org.eclipse.ui.net,1.2.1.r35x_20090812-1200,"org.eclipse.ui.net",1265123728421
+started,bundle,org.eclipse.ui.views,3.4.1.M20090826-0800,"org.eclipse.ui.views",1265123728421
+started,bundle,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"org.eclipse.ui.workbench",1265123728468
+started,bundle,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.workbench.texteditor",1265123728484
+started,bundle,org.eclipse.update.configurator,3.3.0.v20090312,"org.eclipse.update.configurator",1265123728484
+started,bundle,org.eclipse.update.core,3.2.300.v20090525,"org.eclipse.update.core",1265123728578
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1265123728640
+os,sysinfo,,,"win32",1265123728656
+arch,sysinfo,,,"x86",1265123728656
+ws,sysinfo,,,"win32",1265123728656
+locale,sysinfo,,,"it_IT",1265123728656
+processors,sysinfo,,,"2",1265123728656
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1265123728656
+java.runtime.version,sysinfo,,,"1.6.0_16-b01",1265123728656
+java.specification.name,sysinfo,,,"Java Platform API Specification",1265123728656
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1265123728656
+java.specification.version,sysinfo,,,"1.6",1265123728656
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1265123728656
+java.version,sysinfo,,,"1.6.0_16",1265123728656

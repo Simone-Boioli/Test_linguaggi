@@ -1,0 +1,37 @@
+
+public class Auto {
+	private int larghezza;
+	private int altezza;
+	private String targa;
+	
+	public Auto(int larghezza,int altezza, String targa){
+		this.larghezza = larghezza;
+		this.altezza = altezza;
+		this.targa = targa;
+	}
+
+
+	public String toString() {
+		return "Auto [larghezza=" + larghezza + ", altezza=" + altezza
+				+ ", targa=" + targa + "]";
+	}
+
+
+	public int getLarghezza() {
+		return larghezza;
+	}
+
+
+	public int getAltezza() {
+		return altezza;
+	}
+
+
+	public String getTarga() {
+		return targa;
+	}
+	
+	
+	
+	
+}

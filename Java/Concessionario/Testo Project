@@ -1,0 +1,39 @@
+Scrivere un programma che definisce una classe Auto ed una classe Silos che rispecchino il seguente diagramma UML delle classi
+
+La classe Auto è caratterizzata da una larghezza e altezza (riferite ai centimetri).
+
+Il costruttore definisce rispettivamente la targa, la larghezza e l'altezza dell'auto.
+
+La classe definisce anche il metodo ToString che stampa a video tutte le informazioni dell'Auto
+
+La classe Silos è caratterizzata da una larghezza massima e altezza massima (riferite ai centimetri) delle auto che il Silos può accogliere al suo interno.
+
+Il costruttore definisce rispettivamente il nome del Silos, la capacità (ovvero il numero massimo di Auto che può contenere), la larghezza massima e l'altezza massima.
+
+La classe definisce:
+
+    * il metodo entrata che prova a far entrare nel Silos l'Auto indicata, nei limti delle sue dimensioni e della capacità del Silos
+    * il metodo uscita che prova a far uscire dal Silos l'Auto avente la targa indicata, se presente.
+    * il metodo ToString che stampa a video tutte le informazioni del Silos, comprese le informazioni delle Auto che contiene
+
+Definire inoltre una classe Test con un main che:
+
+    * istanzia un Silos chiamato "primo" con capienza 3, larghezza massima 160 cm. e altezza massima 165 cm.;
+    * istanzia un Silos chiamato "secondo" con capienza 50, larghezza massima 170 cm. e altezza massima 200 cm.;
+    * istanzia un'Auto con targa "BM374LA", larghezza 133 cm., altezza 136 cm.;
+    * prova a far entrare l'Auto appena creata nel Silos "primo" e stampa a video l'esito del tentativo di ingresso con le informazioni dell'Auto
+    * istanzia un'Auto con targa "JK078RB", larghezza 156 cm., altezza 168 cm.;
+    * prova a far entrare l'Auto appena creata nel Silos "primo" e stampa a video l'esito del tentativo di ingresso con le informazioni dell'Auto
+    * istanzia un'Auto con targa "AH936YE", larghezza 136 cm., altezza 142 cm.;
+    * prova a far entrare l'Auto appena creata nel Silos "primo" e stampa a video l'esito del tentativo di ingresso con le informazioni dell'Auto
+    * istanzia un'Auto con targa "AR135NM", larghezza 129 cm., altezza 131 cm.;
+    * prova a far entrare l'Auto appena creata nel Silos "primo" e stampa a video l'esito del tentativo di ingresso con le informazioni dell'Auto
+    * prova a far uscire l'Auto con targa "JK078RB" e stampa a video l'esito del tentativo di uscita. In caso di esito positivo stampa a video anche i dati dell'Auto.
+    * se l'Auto con targa "JK078RB" è uscita, allora prova a farla entrare nel Silos "secondo" e stampa a video l'esito del tentativo di ingresso con le informazioni dell'Auto
+    * prova a far uscire l'Auto con targa "BM374LA" e stampa a video l'esito del tentativo di uscita. In caso di esito positivo stampa a video anche i dati dell'Auto.
+    * se l'Auto con targa "BM374LA" è uscita, allora prova a farla entrare nel Silos "secondo" e stampa a video l'esito del tentativo di ingresso con le informazioni dell'Auto
+    * prova a far entrare l'Auto precedentemente creata con targa "AR135NM" nel Silos "primo" e stampa a video l'esito del tentativo di ingresso con le informazioni dell'Auto
+    * stampa a video tutte le informazioni del Silos "primo"
+    * stampa a video tutte le informazioni del Silos "secondo"
+
+Per entrambe le classi Auto e Silos, si ricorra ad opportuni metodi di incapsulamento.

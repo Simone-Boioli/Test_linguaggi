@@ -1,0 +1,30 @@
+/*
+	Una squadra di N robot partecipa all'esecuzione ciclica di un compito
+	Le attività dei robot devono iniziare in un ordine prefissato( prima r1, poi r2, e cosi via)
+	ma dopo l'avvio procedono in parallelo. Un coordinatore impone l'ordine d'avvio a ogni 
+	iterazione del compito.
+	Per ogni iterazione, ciascun robot svolge una propria attività:
+	- la preparazione di un pezzo da elaborare 
+	- l'accesso ad una postazione comune da usare in regime di muta esclusione. La  postazione
+	   è utilizzata eseguendo due operazioni in successione.
+	Modellare il sistema per N=4
+*/
+
+const NRobot = 4
+range IdRobot = 0..NRobot-1
+
+ROBOT = (
+			avvia -> preparaPezzo -> op1 -> op2 -> ROBOT
+		).
+
+POSTAZIONE = (
+				op1 -> op2 -> POSTAZIONE			
+			).
+
+
+COORDINATORE = COORDINATORE[0],
+
+COORDINATORE[daAvviare:IdRobot] = (r[IdRobot].avvia -> COORDINATORE[(daAvviare+1)%NRobot]).
+
+
+||SYS = (r[IdRobot]:ROBOT || COORDINATORE || r[IdRobot]::POSTAZIONE).

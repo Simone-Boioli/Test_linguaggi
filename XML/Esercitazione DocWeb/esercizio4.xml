@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE esercizio4 
+[
+	<!ELEMENT esercizio2 ((A*),(B | C), (D, E)+)+ >
+	<!ELEMENT A (#PCDATA)>
+	<!ELEMENT B (#PCDATA)>
+	<!ELEMENT C (#PCDATA)>
+	<!ELEMENT D (#PCDATA)>
+	<!ELEMENT E (#PCDATA)> 
+]>
+
+<esercizio4>
+	<A> 
+		L&apos;istruzione &apos;if&apos; serve per sceglere due set di istruzioni diversi.
+	</A>
+	
+	<B>
+		Consideriamo l&apos;istruzione &quot;if X &gt; Y yhen print &quot;Valore &amp; Y&quot;&quot;
+	</B>
+	
+	<D>
+		e &quot; if X &lt; Y then print &quot;Y non è minore di X&quot;&quot;.
+	</D>
+	
+	<E> elemento </E>
+</esercizio4>

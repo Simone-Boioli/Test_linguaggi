@@ -1,0 +1,19 @@
+
+public class Tavolo {
+	private Territorio[] stati;
+	
+	public Tavolo(){
+		int numTerritori=40;
+		stati=new Territorio[numTerritori];
+		for(int i=0;i<stati.length;i++)
+			stati[i]=new Territorio(""+i);
+	}
+	
+	public String toString(){
+		String str="";
+		for(int i=0;i<stati.length;i++)
+			str+=stati[i].getNome();
+		return str;
+	}
+	
+}

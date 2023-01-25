@@ -1,0 +1,12 @@
+package RubricaGUI;
+
+import java.awt.*;
+
+public class FinestraPrincipale extends Frame {
+	public FinestraPrincipale(){
+		setSize(200,400);
+		setLocation(500,500);
+		setVisible(true);
+	}
+	
+}

@@ -1,0 +1,4 @@
+
+<!ELEMENT viaggi (volo1, volo2)+>
+<!ELEMENT volo1  (#PCDATA)>
+<!ELEMENT volo2	 (#PCDATA)>

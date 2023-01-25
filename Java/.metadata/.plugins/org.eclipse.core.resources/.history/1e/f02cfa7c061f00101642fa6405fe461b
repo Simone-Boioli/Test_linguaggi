@@ -1,0 +1,23 @@
+import java.io.Serializable;
+
+
+public class ElementoContainer implements Serializable{
+	public ElementoContainer(Domanda domanda) {
+		// TODO Auto-generated constructor stub
+	}
+
+	private ElementoContainer next, prev;
+	/*
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 */
+}

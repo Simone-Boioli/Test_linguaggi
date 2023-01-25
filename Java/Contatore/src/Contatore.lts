@@ -1,0 +1,9 @@
+CONTATORE = (
+				incrementa -> CONTATORE
+			).
+
+INCREMENTA= (
+				incrementa -> INCREMENTA
+			).
+
+||SYS = (CONTATORE || INCREMENTA).

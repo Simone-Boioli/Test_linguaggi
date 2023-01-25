@@ -1,0 +1,6 @@
+<!ELEMENT esercizio2 ((A*),(B | C), (D, E)+)+ >
+<!ELEMENT A (#PCDATA)>
+<!ELEMENT B (#PCDATA)>
+<!ELEMENT C (#PCDATA)>
+<!ELEMENT D (#PCDATA)>
+<!ELEMENT E (#PCDATA)> 

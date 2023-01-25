@@ -1,0 +1,6 @@
+C:\Users\Ghiro\Dropbox\Programmi C#\Esercitazione1\Esercitazione1\bin\Debug\Esercitazione1.exe.config
+C:\Users\Ghiro\Dropbox\Programmi C#\Esercitazione1\Esercitazione1\obj\Debug\Esercitazione1.csprojResolveAssemblyReference.cache
+C:\Users\Ghiro\Dropbox\Programmi C#\Esercitazione1\Esercitazione1\bin\Debug\Esercitazione1.exe
+C:\Users\Ghiro\Dropbox\Programmi C#\Esercitazione1\Esercitazione1\bin\Debug\Esercitazione1.pdb
+C:\Users\Ghiro\Dropbox\Programmi C#\Esercitazione1\Esercitazione1\obj\Debug\Esercitazione1.exe
+C:\Users\Ghiro\Dropbox\Programmi C#\Esercitazione1\Esercitazione1\obj\Debug\Esercitazione1.pdb

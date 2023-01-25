@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE magazzino SYSTEM "magazzino.dtd">
+<magazzino>
+      <prodotto nome="monitor">
+            <articolo>
+                  <marca>philips</marca>
+                  <codice>1234</codice>
+                  <prezzo>56</prezzo>
+                  <numeroPezzi>10</numeroPezzi>
+            </articolo>
+      </prodotto>
+      <prodotto nome="hd">
+            <articolo>
+                  <marca>lg</marca>
+                  <codice>9632</codice>
+                  <prezzo>98</prezzo>
+                  <numeroPezzi>10</numeroPezzi>
+            </articolo>
+      </prodotto>
+      <prodotto nome="notebook">
+            <articolo>
+                  <marca>acer</marca>
+                  <codice>7854</codice>
+                  <prezzo>43</prezzo>
+                  <numeroPezzi>10</numeroPezzi>
+            </articolo>
+      </prodotto>
+      <prodotto nome="notebook">
+            <articolo>
+                  <marca>apple</marca>
+                  <codice>1236</codice>
+                  <prezzo>150</prezzo>
+                  <numeroPezzi>10</numeroPezzi>
+            </articolo>
+      </prodotto>
+      <prodotto nome="hd">
+            <articolo>
+                  <marca>sony</marca>
+                  <codice>8</codice>
+                  <prezzo>9</prezzo>
+                  <numeroPezzi>10</numeroPezzi>
+            </articolo>
+      </prodotto>
+      <prodotto nome="notebook">
+            <articolo>
+                  <marca>hp</marca>
+                  <codice>9632</codice>
+                  <prezzo>23</prezzo>
+                  <numeroPezzi>10</numeroPezzi>
+            </articolo>
+      </prodotto>
+      <prodotto nome="notebook">
+            <articolo>
+                  <marca>apple</marca>
+                  <codice>9595</codice>
+                  <prezzo>65</prezzo>
+                  <numeroPezzi>10</numeroPezzi>
+            </articolo>
+      </prodotto>
+      <prodotto nome="Notebook">
+            <articolo>
+                  <marca>dell</marca>
+                  <codice>9899</codice>
+                  <prezzo>250</prezzo>
+                  <numeroPezzi>10</numeroPezzi>
+            </articolo>
+      </prodotto>
+</magazzino>

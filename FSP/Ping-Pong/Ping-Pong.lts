@@ -1,0 +1,19 @@
+/*
+	Sistema concorrente composto da 3 processi: PING, PONG, RECEIVER. Il processo Ping invia segnali di ping al receiver. Il processo di pong 
+	invia segnali di pong al receiver. Il receiver calcola la differenza tra il numero di messaggi di ping e il numero di messaggi di pong
+*/
+
+PING = (
+			generaPing -> inviaPing -> PING
+		).
+
+PONG = (
+			generaPong -> inviaPong -> PONG
+		).
+
+RECEIVER = (
+				inviaPing -> calcolaDifferenza -> RECEIVER |
+				inviaPong -> calcolaDifferenza -> RECEIVER
+			).
+
+||SYS = (PING || PONG || RECEIVER).

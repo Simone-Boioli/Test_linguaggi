@@ -1,0 +1,13 @@
+package Strutture_Dati;
+
+public class Vector {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

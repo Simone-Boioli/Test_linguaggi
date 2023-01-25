@@ -1,0 +1,6 @@
+C:\Users\Ghiro\Dropbox\Programmi C#\Logger\Logger\bin\Debug\Logger.exe.config
+C:\Users\Ghiro\Dropbox\Programmi C#\Logger\Logger\bin\Debug\Logger.exe
+C:\Users\Ghiro\Dropbox\Programmi C#\Logger\Logger\bin\Debug\Logger.pdb
+C:\Users\Ghiro\Dropbox\Programmi C#\Logger\Logger\obj\Debug\Logger.csprojResolveAssemblyReference.cache
+C:\Users\Ghiro\Dropbox\Programmi C#\Logger\Logger\obj\Debug\Logger.exe
+C:\Users\Ghiro\Dropbox\Programmi C#\Logger\Logger\obj\Debug\Logger.pdb

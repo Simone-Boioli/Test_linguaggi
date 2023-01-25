@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE libro
+[
+    <!ELEMENT libro	(capitoli, figure)+>
+    <!ELEMENT capitoli	(#PCDATA)>
+    <!ELEMENT figure	(#PCDATA)>
+
+    <!ATTLIST capitoli
+	stato (bozza | finale | pubblicato) "bozza" >
+
+    <!ATTLIST figure
+	qualità CDATA #REQUIRED > 
+]>
+
+<libro>
+    <capitoli stato = "pubblicato" >
+	Primo capitolo
+    </capitoli> 
+
+    <figure qualità = "buona"> Figura 1 </figure>
+
+    <capitoli>
+	Secondo capitolo
+    </capitoli>
+
+    <figure qualità = "media"> Figura 2 </figure>
+
+    
+</libro>

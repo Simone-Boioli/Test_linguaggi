@@ -1,0 +1,26 @@
+
+public class DatiAttivazione {
+		private static int giorno;
+		private String nome;
+		
+		public DatiAttivazione(int g, String name){
+			this.setGiorno(g);
+			nome = name;
+		}
+
+		public void setGiorno(int giorno) {
+			if(giorno >=1 && giorno <=365){
+				this.giorno = giorno;
+			}else{
+				System.out.println("giorno non valido");
+			}
+		}
+
+		public static int getGiorno() {
+			return giorno;
+		}
+		
+		
+		
+		
+}

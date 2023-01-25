@@ -1,0 +1,25 @@
+/*
+	Un sistema è composto da un processo scrittore, un processo lettore ad una memora condivisa.
+	Il processo Scrittore produce un valore compreso tra 1 e 3, e lo scrive nella memoria condivisa.
+	Il processo lettore legge il valore e lo stampa
+*/ 
+
+range VALORI = 1..3
+
+SCRITTORE = (
+				produciValore[v:VALORI] -> scriviValore[v] -> SCRITTORE
+).
+
+LETTORE = (
+			leggiValore[va:VALORI] -> stampaValore[va] -> LETTORE
+).
+
+
+MEMORIA = (
+			scriviValore[val:VALORI] -> leggiValore[val] -> MEMORIA
+).
+
+
+||SYS = (
+		  SCRITTORE || LETTORE || MEMORIA
+).

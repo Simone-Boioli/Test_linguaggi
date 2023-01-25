@@ -1,0 +1,22 @@
+PRODUTTORE1 = (
+				produci1 -> deposita1 -> PRODUTTORE1
+			).
+
+PRODUTTORE2 = (
+				produci2 -> deposita2 -> PRODUTTORE2
+			).
+
+CONSUMATORE1 = (
+				leggi1 -> consuma1 -> PRODUTTORE1
+			).
+
+CONSUMATORE2 = (
+				leggi2 -> consuma2 -> PRODUTTORE2
+			).
+
+BUFFER = (
+			deposita1 -> (leggi1 -> BUFFER | leggi2 -> BUFFER) |
+            deposita2 -> (leggi1 -> BUFFER | leggi2 -> BUFFER)
+		).
+
+||SYS = (PRODUTTORE1 || PRODUTTORE2 || CONSUMATORE1 || CONSUMATORE2 || BUFFER).

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+processors,sysinfo,,,"2",1267084090421
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1267084090437
+java.runtime.version,sysinfo,,,"1.6.0_16-b01",1267084090437
+java.specification.name,sysinfo,,,"Java Platform API Specification",1267084090437
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1267084090437
+java.specification.version,sysinfo,,,"1.6",1267084090437
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1267084090437
+java.version,sysinfo,,,"1.6.0_16",1267084090437
+java.vm.info,sysinfo,,,"mixed mode",1267084090437
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1267084090437
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1267084090437
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1267084090437
+java.vm.specification.version,sysinfo,,,"1.0",1267084090437
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1267084090437
+java.vm.version,sysinfo,,,"14.2-b01",1267084090437
+started,bundle,org.eclipse.ecf.filetransfer,3.0.0.v20090831-1906,"org.eclipse.ecf.filetransfer",1267084090468
+started,bundle,org.eclipse.equinox.p2.metadata.repository,1.0.101.R35x_v20090812,"org.eclipse.equinox.p2.metadata.repository",1267084090515
+started,bundle,org.eclipse.equinox.p2.garbagecollector,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.garbagecollector",1267084090937
+started,bundle,org.eclipse.equinox.p2.exemplarysetup,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.exemplarysetup",1267084090937
+started,bundle,org.eclipse.jdt.launching,3.5.0.v20090527,"org.eclipse.jdt.launching",1267084091000
+started,bundle,org.eclipse.equinox.frameworkadmin.equinox,1.0.100.v20090520-1905,"org.eclipse.equinox.frameworkadmin.equinox",1267084091031
+started,bundle,org.eclipse.equinox.p2.updatechecker,1.1.0.v20090520-1905,"org.eclipse.equinox.p2.updatechecker",1267084091093
+started,bundle,org.eclipse.equinox.p2.ui.sdk.scheduler,1.0.0.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk.scheduler",1267084091593
+started,bundle,org.eclipse.jsch.core,1.1.100.I20090430-0408,"org.eclipse.jsch.core",1267084092296
+started,bundle,org.eclipse.team.cvs.core,3.3.200.I20090430-0408,"org.eclipse.team.cvs.core",1267084092312

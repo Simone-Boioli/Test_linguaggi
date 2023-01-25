@@ -1,0 +1,17 @@
+package RubricaGUI;
+
+import java.awt.*;
+
+public class FinestraCerca extends Frame{
+	Label titolo;
+	public FinestraCerca(){
+		pack();
+		setVisible(true);
+		setSize(600,300);
+		setLocation(100,100);
+		
+		titolo = new Label("CERCA UTENTE");
+		
+		add(titolo, BorderLayout.NORTH);
+	}
+}

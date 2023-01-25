@@ -1,0 +1,18 @@
+what,kind,bundleId,bundleVersion,description,time
+opened,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1265123497156
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1265123497500
+activated,view,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PackageExplorer",1265123497656
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265123510828
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265123633343
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265123637593
+error,log,,,"WARNING: Blocked recursive attempt to close part org.eclipse.jdt.ui.CompilationUnitEditor while still in the middle of activating it",1265123637765
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265123640796
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1265123640828
+activated,view,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PackageExplorer",1265123642609
+closed,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1265123642609
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265123647859
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265123649843
+closed,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265123650437
+stopped,bundle,org.eclipse.mylyn.ide.ant,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.ide.ant",1265123655000
+stopped,bundle,org.eclipse.ant.ui,3.4.1.v20090901_r351,"org.eclipse.ant.ui",1265123655359
+stopped,bundle,org.eclipse.compare.win32,1.0.0.I20090430-0408,"org.eclipse.compare.win32",1265123655421

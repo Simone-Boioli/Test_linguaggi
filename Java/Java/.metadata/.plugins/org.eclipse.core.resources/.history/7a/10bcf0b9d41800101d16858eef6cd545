@@ -1,0 +1,21 @@
+
+public class Casa {
+	private int superficie;
+	private float costo;
+	
+	public Casa (int sup, float costo){
+		superficie = sup;
+		this.costo = costo;
+	}
+	
+	public void aggiornaCosto(float costoMetro){
+		float costo2 = superficie*costoMetro;
+		if(costo2 > costo){
+			costo = costo2;
+		}
+	}
+	
+	public float calcolaCostoMetro(){
+		return costo/superficie;
+	}
+}

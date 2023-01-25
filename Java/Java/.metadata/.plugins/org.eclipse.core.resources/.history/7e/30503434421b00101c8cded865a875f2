@@ -1,0 +1,62 @@
+import junit.framework.TestCase;
+
+
+public class TestBancomat extends TestCase {
+
+	public void testInserisciRitiraCarta() {
+		ContoCorrente contiCorrenti[] = {
+				new ContoCorrente("stefano", 500),
+				new ContoCorrente("massimo", 5000),
+				new ContoCorrente("marco", 125),
+				new ContoCorrente("katia", 1200),
+				new ContoCorrente("irene", 3000),
+		};
+		
+		Bancomat bancomat = new Bancomat(contiCorrenti);
+		
+		CartaBancomat carta = new CartaBancomat("stefano", 123, 100);
+		
+		assertEquals(bancomat.ritiraBancomat(), null); //ok
+		
+		boolean inserimentoCorretto = bancomat.inserisciCarta(carta);
+		boolean inserimentoScorretto = bancomat.inserisciCarta(carta);
+		
+		assertTrue(inserimentoCorretto);  // ok
+		assertFalse(inserimentoScorretto); //ok
+		
+		assertEquals(bancomat.ritiraBancomat(), carta); //ok
+	}
+
+	public void testPrelievo() {
+		ContoCorrente contiCorrenti[] = {
+				new ContoCorrente("stefano", 500),
+				new ContoCorrente("massimo", 5000),
+				new ContoCorrente("marco", 125),
+				new ContoCorrente("katia", 1200),
+				new ContoCorrente("irene", 3000),
+		};
+		
+		Bancomat bancomat = new Bancomat(contiCorrenti);
+		
+		CartaBancomat cartaStefano = new CartaBancomat("stefano", 123, 100.0);
+		CartaBancomat cartaLuca = new CartaBancomat("luca", 123, 100.0);
+		
+		bancomat.inserisciCarta(cartaStefano);
+		
+		boolean codiceErrato = bancomat.verificaPin(111);
+		boolean codiceCorretto = bancomat.verificaPin(123);
+		
+		assertFalse(codiceErrato);  //ok
+		assertTrue(codiceCorretto);  //ok
+		
+		assertEquals(bancomat.prelievo(100.0), 0.0);
+		
+		
+	
+	}
+/*
+	public void testToString() {
+		fail("Not yet implemented");
+	}
+*/
+}

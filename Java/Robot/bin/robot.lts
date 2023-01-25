@@ -1,0 +1,20 @@
+const N = 4
+range IDROBOT = 0..N-1
+
+ROBOT = (
+   avvia -> preparaPezzo -> acq -> op1 -> op2 -> ril -> ROBOT
+).
+
+COORDINATORE = COORDINATORE[0],
+COORDINATORE[daAvviare:IDROBOT] = (
+  when(daAvviare < N-1) r[daAvviare].avvia -> COORDINATORE[daAvviare + 1] |
+  when(daAvviare = N-1) r[daAvviare].avvia -> COORDINATORE[0]
+).
+
+POSTAZIONE = LIBERA,
+LIBERA = (r[IDROBOT].acq -> OCCUPATA),
+OPPUPATA = (r[IDROBOT].op1 -> OCCUPATA[id] |
+            r[IDROBOT].op2 -> OCCUPATA[id] |
+            r[IDROBOT].ril -> LIBERA). 
+
+||SYS = (r[IDROBOT]:ROBOT || COORDINATORE||POSTAZIONE).

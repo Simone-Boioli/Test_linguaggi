@@ -1,0 +1,9 @@
+AUTO = (entra -> esce -> AUTO).
+
+PARCHEGGIO = PARCHEGGIO[0],
+PARCHEGGIO[postiOccupati:0..4] = (
+			when(postiOccupati < 4) entra -> PARCHEGGIO[postiOccupati +1] |
+			when(postiOccupati > 0) esci -> PARCHEGGIO[postiOccupati -1] 
+			).
+
+||SYS = (a[0..5] : AUTO || PARCHEGGIO).

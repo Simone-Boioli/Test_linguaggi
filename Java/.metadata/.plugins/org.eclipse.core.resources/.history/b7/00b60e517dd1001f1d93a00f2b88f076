@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+
+public class Videoteca {
+	//Una videoteca gestisce un catalogo di film e una lista di utenti
+	private ArrayList<Film>catalogo;  //creo un array di film
+	private ArrayList<Utente> utenti;  //creo un array di utenti
+	
+	//costruttore
+	public Videoteca(){
+		this.catalogo = new ArrayList<Film>();
+		this.utenti = new ArrayList<Utente>();
+	}
+	public void addFilm(Film f){   //metodo per aggiungere un film
+		if(f != null) this.catalogo.add(f);
+	}
+	public void addUtente(Utente u){   //metodo per aggiungere utenti
+		if(u != null) this.utenti.add(u);
+	}
+	public Film getFilmInCatalogo(String titolo){   //Restituisce il film con il titolo richiesto se esiste in catalogo, altrimenti restituisce null
+		for(int i = 0; i<this.catalogo.size(); i++){
+			Film f = this.catalogo.get(i);
+			if(f.getTitolo().equalsIngnoreCase(titolo))
+				return f;
+		}
+		return null;
+	}
+	public Utente getUtentePerNome(String nome){   //Restituisce l'utente con il nome richiesto se esiste nella lista utenti, se no null
+		for(int i =0; i<this.utenti.size(); i++){
+			Utente u = this.utenti.get(i);
+			if(u.getNome().equalsIgnoreCase(nome))
+				return u;
+		}
+		return null;
+	}
+	
+	/* Permette di inserire un nuovo fil interattivamente 
+	 * Per essere valido, il nuovo film deve avere un numero Pari di scene e più di 3 scene
+	 */
+	public void registraNuovoFilmInCatalogoInterattivamente(){
+		System.out.println("Inserisci un titolo: ");
+		String titolo = SavitchIn.readLine();
+		System.out.println
+		
+	}
+}

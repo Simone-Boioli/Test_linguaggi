@@ -1,0 +1,14 @@
+/*
+	Due tuffatori si preparano al tuffo, si tuffano contemporaneamente e poi 
+	emergono indipendentemente
+*/
+
+TUFFATORE1 = (
+				prepara1 -> tuffa -> emerge1 -> TUFFATORE1
+			 ).
+
+TUFFATORE2 = (
+				prepara2 -> tuffa -> emerge2 -> TUFFATORE2
+			 ).
+
+||TUFFATORI = (TUFFATORE1 || TUFFATORE2).

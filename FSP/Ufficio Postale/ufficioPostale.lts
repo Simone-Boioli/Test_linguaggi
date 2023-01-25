@@ -1,0 +1,23 @@
+const N = 3
+const MAX = 2
+
+range ID_BIGLIETTI=0..N
+range ID_UTENTE = 0..N-1
+
+UTENTE = (
+	entra[id:ID_BIGLIETTI] -> servi[id] ->esci -> UTENTE
+).
+
+SPORTELLO = SPORTELLO[0],
+SPORTELLO[turno:ID_BIGLIETTI] = (
+	servi[turno] -> SPORTELLO[(turno+1)%(N+1)] |
+).
+
+UFFICIO = UFFICIO[0][0],
+UFFICIO[biglietto:ID_BIGLIETTI][presenti:0..MAX]=(
+	when(presenti<MAX) entra[biglietto] -> UFFICIO[(biglietto+1)%(N+1)][presenti+1] |
+	esci -> UFFICIO[biglietto][presenti-1]
+).
+
+
+||SYS =(u[ID_UTENTE]:UTENTE || u[ID_UTENTE]::SPORTELLO || u[ID_UTENTE]::UFFICIO).

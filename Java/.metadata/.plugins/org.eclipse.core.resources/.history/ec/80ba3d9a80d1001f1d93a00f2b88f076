@@ -1,0 +1,35 @@
+
+public class Film {
+	private String titolo;
+	private boolean disponibile;
+	private int costoPerOra;
+	private int[] durataScenaInSecondi;
+	
+	
+	public Film(String titolo, boolean disponibile, int costoPerOra){
+		disponibile = true;
+		
+	}
+	
+	public boolean affitta(){
+		if(disponibile = true){
+			disponibile = false;
+		}
+		return disponibile;
+	}
+	
+	public void restituisci(){
+		disponibile = true;
+	}
+	
+	public int getDurataSecondi(){
+		return 4; /////////////////////////////
+	}
+	public int getDurataInSecondi(){
+		return 3; //////////////////
+	}
+	
+	public String getTitolo(){
+		return titolo;
+	}
+}

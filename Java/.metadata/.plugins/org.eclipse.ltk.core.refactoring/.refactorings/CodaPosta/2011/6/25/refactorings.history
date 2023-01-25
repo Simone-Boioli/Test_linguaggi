@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;CodaPosta&apos;&#x0D;&#x0A;- Original project: &apos;CodaPosta&apos;&#x0D;&#x0A;- Original element: &apos;CodaPosta/src/Strutture_Dati&apos;" description="Delete element" element1="/src&lt;Strutture_Dati" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1308571195281" subPackages="false" version="1.0"/>
+</session>

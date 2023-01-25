@@ -1,0 +1,30 @@
+/*Modellare in FSP un sistema formato da un contenitore, N processi utenti e un rifornitore. 
+Il contenitore può contenere fino a un massimo di Max elementi; gli utenti eseguono un programma ciclico 
+nel quale, a ogni iterazione, devono prelevare un elemento dal contenitore, per poi elaborarlo autonomamente. 
+Quando il contenitore è vuoto, il rifornitore lo riempie in una singola operazione.
+*/
+
+const MaxElementi = 6
+range Elementi = 0..MaxElementi
+
+const NUtenti = 3 
+range N = 1..NUtenti
+
+CONTENITORE = CONTENITORE[MaxElementi],
+CONTENITORE[e:Elementi] = (
+			when(e == 0) riempi -> CONTENITORE[MaxElementi] |
+			when(e > 0) u[N].preleva -> CONTENITORE[e-1]
+).
+
+RIFORNITORE = (
+				riempi -> RIFORNITORE
+).
+
+UTENTE = (
+		preleva -> elabora -> UTENTE
+).
+
+
+||SYS = (CONTENITORE || RIFORNITORE || u[N]:UTENTE).
+
+

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE AZ[
+	<!ELEMENT AZ (A, B)+>
+	<!ELEMENT A      (#PCDATA)>
+	<!ELEMENT B      (#PCDATA)>
+]>
+
+
+<AZ><A><!--commento1-->Testo di A</A>TestoEsterno<B><!--commento2--> testo di B</B></AZ>

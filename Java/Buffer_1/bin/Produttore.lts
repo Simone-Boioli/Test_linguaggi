@@ -1,0 +1,4 @@
+PRODUTTORE=(produci->deposita->PRODUTTORE).
+CONSUMATORE=(leggi->consumo->CONSUMATORE).
+BUFFER=(deposita->leggi->BUFFER).
+||SYS=(PRODUTTORE||CONSUMATORE||BUFFER).

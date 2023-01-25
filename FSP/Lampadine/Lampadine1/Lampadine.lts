@@ -1,0 +1,4 @@
+LAMPADINA1 = (accendi1 -> spegni1 -> LAMPADINA1).
+LAMPADINA2 = (accendi2 -> spegni2 -> LAMPADINA2).
+
+||LAMPADINE = (LAMPADINA1 || LAMPADINA2).

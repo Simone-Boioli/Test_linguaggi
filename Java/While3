@@ -1,0 +1,29 @@
+/*Scrivere un programma Java composto dai seguenti metodi:
+
+    * Metodo pari: riceve come parametro un numero intero e restituisce un booleano che vale 
+      vero se esso è pari e false altrimenti.
+    * Metodo main: legge una sequenza di numeri interi tramite l'apposito metodo della classe SavitchIn 
+      e, per ognuno di essi scrive se è pari o dispari usando il metodo pari. Si supponga che la sequenza  
+      termini quando viene letto il numero -1. 
+*/
+
+public class While2{
+	
+	public Pari(int m){
+	if (m%2)
+		return ("Pari");
+	else
+		return("Dispari");
+	}
+	
+	
+	
+	public static void main(String[] ar){
+	int n=0;
+	while (n!=-1){
+		System.out.println("Inserisci una sequenza di numeri");
+		int m=SavitchIn.readLineInt();
+		System.out.println(Pari(m));
+	
+	}
+}

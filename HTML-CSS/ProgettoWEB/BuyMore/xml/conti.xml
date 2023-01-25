@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE conti SYSTEM "conti.dtd">
+<conti>
+      <conto idUtente="tritto"/>
+      <conto idUtente="kristina"/>
+      <conto idUtente="matteo"/>
+      <conto idUtente="fabio"/>
+      <conto idUtente="riccardo"/>
+      <conto idUtente="anna"/>
+      <conto idUtente="simone"/>
+      <conto idUtente="simone"/>
+</conti>

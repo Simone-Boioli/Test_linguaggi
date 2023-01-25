@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE viaggi SYSTEM "esterno.dtd">
+
+<viaggi>
+    <volo1>
+	Milano - Napoli
+    </volo1>
+
+    <volo2>
+	Napoli - Palermo
+    </volo2>
+</viaggi>

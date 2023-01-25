@@ -1,0 +1,15 @@
+
+public class SkipassGiornaliero {
+
+	public boolean controlloValidità(int giorno){
+		if(giorno == DatiAttivazione.getGiorno()){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	public String toString(){
+		return "Nome: "+ DatiAttivazione.getNome()+ " giorno di validità: "+ DatiAttivazione.getGiorno();
+	}
+}

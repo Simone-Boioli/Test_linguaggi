@@ -1,0 +1,5 @@
+SENDER1=(produciHttp->inviaHttp->SENDER1).
+SENDER2=(produciSOAP->inviaSOAP->SENDER2).
+RECEIVER=(inviaHttp->conta->RECEIVER | 
+          inviaSOAP->conta->RECEIVER).
+||SYS=(SENDER1||SENDER2||RECEIVER). 

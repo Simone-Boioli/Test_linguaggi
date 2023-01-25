@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE articolo [
+    <!ELEMENT articolo	(titolo, autore)+>
+    <!ELEMENT autore	(nome, nazione)>
+    <!ELEMENT titolo	(#PCDATA)>
+    <!ELEMENT nome	(#PCDATA)>
+    <!ELEMENT nazione	(#PCDATA)>
+]>
+
+<articolo>
+    <titolo>
+	XML for the WWW
+    </titolo>
+
+    <autore>
+	<nome> 
+	    Elizabeth Castro
+	</nome>
+
+	<nazione>
+	    U.S.A
+	</nazione>
+    </autore>
+</articolo>

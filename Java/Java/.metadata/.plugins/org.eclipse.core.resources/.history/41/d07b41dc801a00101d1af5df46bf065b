@@ -1,0 +1,69 @@
+import junit.framework.TestCase;
+
+
+public class TestLettoreDvd extends TestCase {
+
+	public void testInserisciDvd() {
+		LettoreDvd lettore = new LettoreDvd (0);
+		
+		Dvd dvd = new Dvd(0,"Madagascar",88);
+		
+		boolean inserisciDvd = lettore.inserisciDvd(dvd);
+		boolean reinserisciDvd = lettore.inserisciDvd(dvd);
+		
+		assertTrue(inserisciDvd);
+		assertFalse(reinserisciDvd);
+	}
+
+	/*public void testRimuoviDvd() {
+		fail("Not yet implemented");
+	}
+	
+	*/
+	
+	public void testPlayStop() {
+		LettoreDvd lettore = new LettoreDvd(0);
+		
+		Dvd dvdSameRegion = new Dvd(0,"Madagascar",88);
+		Dvd dvdDifferentRegion = new Dvd (3, "L'altra sporca ultima meta", 113);
+		
+		boolean noDvdPlay = lettore.play();
+		//boolean noDvdStop = lettore.stop();
+		
+		lettore.inserisciDvd(dvdSameRegion);
+		
+		boolean sameRegionPlay = lettore.play();
+		//boolean sameRegionStop = lettore.stop();
+		
+		lettore.rimuoviDvd();
+		lettore.inserisciDvd(dvdDifferentRegion);
+		
+		boolean differentRegionPlay = lettore.play();
+		//boolean differentRegionStop = lettore.stop();
+		
+		assertFalse(noDvdPlay);
+		//assertFalse(noDvdStop);
+		assertTrue(sameRegionPlay);
+		//assertTrue(sameRagionStop);
+		assertFalse(differentRegionPlay);
+		//assertFalse(differentRegionstop);
+	}
+
+	
+
+	public void testToString() {
+		LettoreDvd lettore = new LettoreDvd (0);
+		Dvd dvd = new Dvd(0, "Madagascar", 88);
+		
+		String s1 = lettore.toString();
+		
+		lettore.inserisciDvd(dvd);
+		lettore.play();
+		
+		String s2 = lettore.toString();
+		
+		//assertEquals("LettoreDvd [regionCode=0]", s1);
+		assertEquals("LettoreDvd [regionCode=0]Dvd [Codice=0, titolo=Madagascar, durata=88", s2);
+	}
+
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE esercizio2 SYSTEM "esercizio2.dtd">
+
+<esercizio2>
+	<A> elemento A </A>
+	<B> elemento B </B>
+	<D> elemento D </D>
+	<E> elemento E </E>
+	
+	<C> elemento C </C>
+	<D> elemento D </D>
+	<E> elemento E </E>
+	<D> elemento D </D>
+	<E> elemento E </E>
+	
+	<A> elemento A </A>
+	<C> elemento C </C>
+	<D> elemento D </D>
+	<E> elemento E </E>
+	<A> elemento A </A>
+	<C> elemento C </C>
+	<D> elemento D </D>
+	<E> elemento E </E>
+</esercizio2>

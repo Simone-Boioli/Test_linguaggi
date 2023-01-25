@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE opere 
+[
+    <!ELEMENT opere	    (prefazione, poesia*)>
+    <!ELEMENT prefazione    (#PCDATA | citazione)*>
+    <!ELEMENT citazione	    (#PCDATA)>
+    <!ELEMENT poesia	    (#PCDATA)>
+
+    <!ATTLIST citazione
+	target IDREF #REQUIRED >
+    <!ATTLIST poesia
+	val_id ID #IMPLIED >
+]>
+
+<opere>
+    <prefazione>
+	INTRODUZIONE. In questa raccolta presentiamo le opere più famose della letteratura italiana.
+	Troviamo innanzitutto le poesie di Leopardi,
+	
+	<citazione target = "leopardi">
+	    come "Il passero solitario"
+	</citazione>
+
+	oppure quella di Ungaretti,
+
+	<citazione target = "ungaretti"> 
+	    come "Mattina"
+	</citazione>
+    </prefazione>
+
+    <poesia val_id = "leopardi"> 
+	Elemento riferito: Contenuto della poesia
+    </poesia>
+
+    <poesia val_id = "ungaretti">
+	Elemento riferito: Contenuto della poesia
+    </poesia>
+</opere>

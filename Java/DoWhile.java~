@@ -1,0 +1,17 @@
+/*Scrivere un programma Java che:
+
+    * legge una sequenza non vuota di numeri naturali non negativi, scritti uno per riga su input standard, e 
+      terminata dal numero 0, usando il metodo opportuno della classe SavitchIn,
+    * conta i valori pari e i valori dispari (escludendo il valore "tappo" 0),
+    * scrive su output standard il numero di valori pari e il numero di valori dispari 
+*/
+
+public class DoWhile2{
+	public static void main(String []a){
+		while(a!=0){
+		System.out.println("inserisci valori");
+		int a=SavitchIn.readLineInt();
+		}
+	}
+}
+

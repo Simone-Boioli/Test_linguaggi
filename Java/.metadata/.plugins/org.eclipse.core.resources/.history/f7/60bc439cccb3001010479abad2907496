@@ -1,0 +1,52 @@
+package RubricaGUI;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class FinestraPrincipale extends Frame {
+	Button cerca;
+	Button insert;
+	Button delete;
+	
+	public FinestraPrincipale(){
+	
+		cerca = new Button("Cerca Contatto");
+		insert = new Button("Inserisci Contatto");
+		delete = new Button("Elimina Contatto");
+		
+		cerca.addActionListener(new Ascoltatore1());
+		insert.addActionListener(new Ascoltatore2());
+		delete.addActionListener(new Ascoltatore3());
+		
+		setLayout(new FlowLayout());
+		add(cerca);
+		add(insert);
+		add(delete);
+		
+		
+		this.setBounds(400, 400, 300, 100);
+		this.setTitle("Rubrica");
+		this.pack();
+		this.setVisible(true);
+	}	
+	
+	public class Ascoltatore1 implements ActionListener{
+		public void actionPerformed(ActionEvent e){
+			new FinestraCerca();
+		}
+	}
+	
+	public class Ascoltatore2 implements ActionListener{
+		public void actionPerformed(ActionEvent e){
+			new FinestraInserisci();
+		}
+	}
+	
+	public class Ascoltatore3 implements ActionListener{
+		public void actionPerformed(ActionEvent e){
+			new FinestraCancella();
+		}
+	}
+	
+	
+}

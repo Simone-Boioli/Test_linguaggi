@@ -1,0 +1,33 @@
+package RubricaGUI;
+
+import java.awt.*;
+
+public class FinestraPrincipale extends Frame {
+	Button cerca= new Button("Cerca Contatto");
+	Button insert= new Button("Inserisci Contatto");
+	Button delete= new Button("Elimina Contatto");
+	
+	public FinestraPrincipale(){
+		setSize(600,600);
+		setLocation(400,400);
+		setVisible(true);
+		pack();
+		/*
+		cerca = new Button("Cerca Contatto");
+		insert = new Button("Inserisci Contatto");
+		delete = new Button("Elimina Contatto");
+		*/
+		setLayout(new FlowLayout());
+		add(cerca);
+		add(insert);
+		add(delete);
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		new FinestraPrincipale();
+	}
+	
+}

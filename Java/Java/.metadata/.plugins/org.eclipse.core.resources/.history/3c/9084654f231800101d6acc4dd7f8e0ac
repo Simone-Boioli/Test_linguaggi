@@ -1,0 +1,39 @@
+
+public class Silos {
+	private String nome;
+	private int larghezza;
+	private int altezza;
+	private int capienza;
+	
+	
+	public Silos(String nome, int capacità, int larghezza, int altezza){
+		this.nome = nome;
+		this.larghezza = larghezza;
+		this.altezza = altezza;
+		this.capienza = capacità;
+	}
+	
+	public boolean entrata(Auto a){
+		if(a.getAltezza() < this.altezza && a.getLarghezza() < this.larghezza && capienza != 0){
+			capienza ++;
+			return true;
+			
+			
+		}else{
+			return false;
+		}
+	}
+	
+	public void uscita(String targa){
+		
+	}
+
+	
+	public String toString() {
+		return "Silos [nome=" + nome + ", larghezza=" + larghezza
+				+ ", altezza=" + altezza + "]";
+	}
+
+	
+	
+}

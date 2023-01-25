@@ -1,0 +1,11 @@
+CREATE TABLE Persone{
+	Cognome      varchar(20) primary key  not null,
+	Nome         varchar(20),
+	Telefono     numeric(10),
+	Cellulare    numeric(10),
+	e-mail       varchar(30),
+	Via          varchar(10),
+	N° Civico    numeric(3),
+	Città        varchar(20),
+	Provincia    varchar(20)
+}

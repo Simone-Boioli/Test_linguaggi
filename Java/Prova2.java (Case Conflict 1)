@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+public class prova{
+	public static void main(String [] args){
+		String inputText = args[0];
+		double val = Double.parseDouble(args[1]);
+		
+		try{
+			BufferedReader inputStream = new BufferReader(new FileReader(inputText));
+			String line = inputStream.readLine();
+
+		}
+
+	}
+}

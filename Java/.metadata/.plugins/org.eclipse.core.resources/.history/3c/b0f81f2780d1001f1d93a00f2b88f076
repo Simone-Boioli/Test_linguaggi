@@ -1,0 +1,78 @@
+import java.util.ArrayList;
+
+public class Videoteca {
+	//Una videoteca gestisce un catalogo di film e una lista di utenti
+	private ArrayList<Film>catalogo;  //creo un array di film
+	private ArrayList<Utente> utenti;  //creo un array di utenti
+	
+	//costruttore
+	public Videoteca(){
+		this.catalogo = new ArrayList<Film>();
+		this.utenti = new ArrayList<Utente>();
+	}
+	public void addFilm(Film f){   //metodo per aggiungere un film
+		if(f != null) this.catalogo.add(f);
+	}
+	public void addUtente(Utente u){   //metodo per aggiungere utenti
+		if(u != null) this.utenti.add(u);
+	}
+	public Film getFilmInCatalogo(String titolo){   //Restituisce il film con il titolo richiesto se esiste in catalogo, altrimenti restituisce null
+		for(int i = 0; i<this.catalogo.size(); i++){
+			Film f = this.catalogo.get(i);
+			if(f.getTitolo().equalsIngnoreCase(titolo))
+				return f;
+		}
+		return null;
+	}
+	public Utente getUtentePerNome(String nome){   //Restituisce l'utente con il nome richiesto se esiste nella lista utenti, se no null
+		for(int i =0; i<this.utenti.size(); i++){
+			Utente u = this.utenti.get(i);
+			if(u.getNome().equalsIgnoreCase(nome))
+				return u;
+		}
+		return null;
+	}
+	
+	/* Permette di inserire un nuovo fil interattivamente 
+	 * Per essere valido, il nuovo film deve avere un numero Pari di scene e più di 3 scene
+	 */
+	public void registraNuovoFilmInCatalogoInterattivamente(){
+		System.out.println("Inserisci un titolo: ");
+		String titolo = SavitchIn.readLine();
+		System.out.println("Inserisci un numero di scene (n°pari): ");
+		int L = SavitchIn.readLineInt();
+		while(L < 3 || L % 2 != 0){
+			System.out.println("Numero inserito troppo piccolo o non è pari.");
+			L = SavitchIn.readLineInt;
+		}
+		
+		int[] durataScene = new int [L];
+		
+		for(int i = 0; i<L; i++){
+			System.out.println("Inserisci la durata della scena: "+ i);
+			durataScene[i] = SavitchIn.readLineInt();
+		}
+		
+		System.out.println("Inserisci un costo per ora in euro: ");
+		int euro = SavitchIn.readLineInt();
+		
+		Film f = new Film(titolo, durataScene, euro);
+		this.addFilm(f);
+	}
+	/*Permette di inserire un nuovo utente interattivamenete.
+	 * Chi effettua l'inserimento deve specificare se si tratta di
+	 * un utente in possesso di una carta fidaty o meno
+	 */
+	public void registaNuovoUtenteInterattivamente(){
+		System.out.println("Inseriscoi nome: ");
+		String nome = SavitchIn.readLine();
+		System.out.println("L'utente ha la tessera fidaty?");
+		boolean fidaty = SavitchIn.readLineBoolean();
+		if(fidaty){
+			this.addUtente(new UtenteTesseraFidaty(nome));
+		}else{
+			this.addUtente(new Utente(nome));
+		}
+			
+	}
+}

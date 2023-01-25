@@ -1,0 +1,31 @@
+const K = 2 //dimensione buffer
+const N = 2 //numero dei consumatori
+range ID = 1..N
+const High = 1 //indica che il task ha alta priorità
+const Low = 0 //indica che il task ha bassa priorità
+
+
+PRODUTTORE = (generaA -> depositaA -> PRODUTTORE |
+			  generaB -> depositaB -> PRODUTTORE).
+
+CONSUMATORE = (preleva[t:Low..High] -> LAVORO[t]),
+LAVORO[High]=(esegui[High] -> CONSUMATORE),
+LAVORO[Low]=(esegui[Low] -> CONSUMATORE |
+			 preleva[High] -> LAVORO[High]).
+	//il consumatore sceglie se eseguire il task a bassa priorità oppure se provare a prelevare un
+	//task ad alta priorità
+
+BUFFER = B[0][0], //il primo indice indica il numero di task ad alta priorità mentre il secondo
+				  //indica il numero di task a bassa priorità
+B[ta:0..K][tb:0..K] = (
+	when (ta+tb)<K 	depositaA -> B [ta+1][tb] |
+		//c'è un posto libero nel buffer quindi inserisco il task
+	when (ta+tb)==K && tb>0 depositaA -> B[ta+1][tb-1] |
+		//se il buffer è pieno ma c'è almeno un task a bassa priorità lo elimino e inserisco il task ad alta priorià
+	when (ta+tb)<K	depositaB -> B[ta][tb+1] |
+	when (ta+tb)==K	depositaB -> B[ta][tb] |	//se il buffer è pieno scarto il task a bassa priorità
+	when ta>0 c[ID].preleva[High] -> B[ta-1][tb] |
+	when ta==0 && tb>0 c[ID].preleva[Low] -> B[ta][tb-1]).
+
+
+||SYS = (PRODUTTORE || c[ID]:CONSUMATORE || BUFFER).

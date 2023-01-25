@@ -1,0 +1,7 @@
+LAMPADINA = (
+				accendi -> spegni -> LAMPADINA
+			).
+
+||DUELAMPADINE = (
+				l[0..1]:LAMPADINA				
+			).

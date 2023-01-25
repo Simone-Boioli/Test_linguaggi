@@ -1,0 +1,7 @@
+-Si implementi una classe File che incapsula un arrey di byte.il metodo getSize
+ restituisce la dimensione(n di byte) dell'oggetto File, e il metodo isBiggerThan
+ restituisce true o false secondo che l'oggetto Fle sia o non sia più grande di una data dimensione
+
+-si implementi una classe Folder che estende File e incapsula a sua volta un arrrey di File(max 10).Il metodo
+ aggiungiFile permette di inserire un oggetto ile ne folder fino al raggiungimento del n° max
+ Folder ridefinisce getSize 

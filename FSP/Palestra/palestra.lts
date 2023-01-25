@@ -1,0 +1,26 @@
+const N = 3 // numero utenti
+range T = 0..N // contatore
+range ID= 1..N // Id utenti
+const True = 1
+const False = 0
+range B = False..True
+
+Spogliatoio = Spogliatoio[0][0][0][0][0][False][True],  
+Spogliatoio[nd:T][nu:T][vp:0..1][ad:T][au:T][av:B][pd:B] = 
+	    (donna[ID].richiesta  -> Spogliatoio[nd][nu][vp][ad+1][au][av][pd]
+	    |when (nu==0 && (!vp) && !av && (au==0 || pd)) 
+           donna[ID].entra  -> Spogliatoio[nd+1][nu][vp][ad-1][au][av][pd]
+        |donna[ID].esce     -> Spogliatoio[nd-1][nu][vp][ad][au][av][False]
+        |uomo[ID].richiesta->Spogliatoio[nd][nu][vp][ad][au+1][av][pd]
+        |when (nd==0 && (!vp) && !av && (ad==0 || !pd)) 
+           uomo[ID].entra -> Spogliatoio[nd][nu+1][vp][ad][au-1][av][pd]
+        |uomo[ID].esce    -> Spogliatoio[nd][nu-1][vp][ad][au][av][True]
+	    |vip.richiesta  -> Spogliatoio[nd][nu][vp][ad][au][True][pd]
+        |when (nd==0 && nu ==0) 
+           vip.entra -> Spogliatoio[nd][nu][1][ad][au][False][pd]
+        |vip.esce    -> Spogliatoio[nd][nu][0][ad][au][av][pd]
+	).
+
+Utente = (richiesta->entra->esce->Utente).
+
+||Palestra = (donna[ID]:Utente||uomo[ID]:Utente||vip:Utente || Spogliatoio).

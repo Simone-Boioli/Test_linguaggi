@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0">
+ 
+ 	<display-name>
+		Benvenuto A Tomcat
+	</display-name>
+	
+	<description>
+		Benvenuto
+	</description>
+		
+	<!-- servlet per aggiungere un prodotto -->
+  	<servlet>  <!-- file java -->
+		<servlet-name>servlet_aggiungiProdotto</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> AggiungiProdotto </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_aggiungiProdotto</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_aggiungiProdotto</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- servlet per stampare i prodotti -->
+  	<servlet>  <!-- file java -->
+		<servlet-name>servlet_stampaProdotto</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> StampaProdotto </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_stampaProdotto</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_stampaProdotto</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- servlet per stampare tutti i prodotti -->
+  	<servlet>  <!-- file java -->
+		<servlet-name>servlet_stampaProdotti</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> StampaProdotti </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_stampaProdotti</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_stampaProdotti</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	<!-- servlet per aggiungere un utente da admin -->
+  	<servlet>  <!-- file java -->
+		<servlet-name>servlet_aggiungiUtente</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> AggiungiUtente </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_aggiungiUtente</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_aggiungiUtente</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- servlet per aggiungere un utente da registrazione -->
+  	<servlet>  <!-- file java -->
+		<servlet-name>servlet_registrazioneUtente</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> RegistrazioneUtente </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_registrazioneUtente</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_registraUtente</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- servlet per rimuovere un utente da admin -->
+  	<servlet>  <!-- file java -->
+		<servlet-name>servlet_rimuoviUtente</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> RimuoviUtente </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_rimuoviUtente</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_rimuoviUtente</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- servlet per il controllo dell'accesso -->
+  	<servlet>  <!-- file java -->
+		<servlet-name>servlet_Accesso</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> Accesso </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_Accesso</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_accesso</url-pattern>
+	</servlet-mapping>
+	
+	<!-- servlet per la ricerca nella index -->
+  	<servlet>  <!-- file java -->
+		<servlet-name>servlet_cercaProdotto</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> CercaProdotto </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_cercaProdotto</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_cercaProdotto</url-pattern>
+	</servlet-mapping>
+	
+	<!-- servlet per la modifica di un utente -->
+  	<servlet>  <!-- file java -->
+		<servlet-name>servlet_modificaUtente</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> ModificaUtente </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_modificaUtente</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_modificaUtente</url-pattern>
+	</servlet-mapping>
+	
+	<!-- servlet per stampare un utente -->
+  	<servlet>  <!-- file java -->
+		<servlet-name>servlet_stampaUtente</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> StampaUtente </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_stampaUtente</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_stampaUtente</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- servlet per stampare tutti gli utenti -->
+  	<servlet>  <!-- file java -->
+		<servlet-name>servlet_stampaUtenti</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> StampaUtenti </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_stampaUtenti</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_stampaUtenti</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- servlet per rimuovere un prodotto -->
+  	<servlet>  <!-- file java -->
+		<servlet-name>servlet_rimuoviProdotto</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> RimuoviProdotto </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_rimuoviProdotto</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_rimuoviProdotto</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- servlet per cercare un prodotto da utente registrato-->
+  	<servlet>  <!-- file java -->
+		<servlet-name>servlet_cercaProdottoRegistrato</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> CercaProdottoRegistrato </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_cercaProdottoRegistrato</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_cercaProdottoRegistrato</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+		<!-- servlet per modificare un prodotto -->
+  	<servlet>  <!-- file java -->
+		<servlet-name>servlet_modificaProdotto</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> ModificaProdotto </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_modificaProdotto</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_modificaProdotto</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- servlet per la ricerca avanzata -->
+	 <servlet>  <!-- file java -->
+		<servlet-name>servlet_ricercaAvanzata</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> RicercaAvanzata </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_ricercaAvanzata</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_ricercaAvanzata</url-pattern>
+	</servlet-mapping>
+	
+	
+		<!-- servlet per la ricerca avanzata per utente Registrato-->
+	 <servlet>  <!-- file java -->
+		<servlet-name>servlet_ricercaAvanzataRegistrato</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> RicercaAvanzataRegistrato </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_ricercaAvanzataRegistrato</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_ricercaAvanzataRegistrato</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+		<!-- servlet per la la visualizzazione del carrello-->
+	 <servlet>  <!-- file java -->
+		<servlet-name>servlet_carrello</servlet-name> <!-- nome nella web.xml -->
+		<servlet-class> Carrello </servlet-class> <!-- nome della classe java -->
+	</servlet>
+	
+	<servlet-mapping> <!-- form html-->
+		<servlet-name>servlet_carrello</servlet-name> <!-- nome nella web.xml -->
+		<url-pattern>/s_carrello</url-pattern>
+	</servlet-mapping>
+	
+	
+  
+  
+ </web-app>

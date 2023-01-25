@@ -1,0 +1,13 @@
+package RubricaGUI;
+
+import java.awt.*;
+
+public class FinestraInserisci extends Frame{
+	public FinestraInserisci(){
+		pack();
+		setVisible(true);
+		setSize(600,300);
+		setLocation(100,100);
+		
+	}
+}

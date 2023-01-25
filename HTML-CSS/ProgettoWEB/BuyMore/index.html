@@ -1,0 +1,66 @@
+<!-- HTML 5 -->
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset=utf-8" />
+	<title> Buy More </title>
+    <link rel="stylesheet" type="text/css" href="style.css" /> <!--  per importare il css -->
+</head>
+
+<body>
+		<header id="BANNER"> <!--intestazione -->
+			<!--logo -->
+			<a href="index.html">
+				<img class="LOGO" src="immagini/logo.png" />	
+			</a>
+			
+			<!-- form per la ricerca di un articolo -->
+			<form action="s_cercaProdotto" method="get">
+				<!-- selezione -->
+				<select class="SELEZIONE_RICERCA" name="prodotti">
+                	<option value="tutteLeCategorie" selected="selected">Tutte le Categorie</option>
+                    <option value="monitor">Monitor</option>
+                    <option value="notebook">Notebook</option>
+                    <option value="hd">Hard Disk</option>
+                </select>
+                
+                <!--testo ricerca -->
+                <input class="TESTO_RICERCA" type="search" name="testoRicerca" />
+                
+                <!-- bottone ricerca -->
+                <button class="BOTTONE_INVIO" type="submit">
+                    Cerca
+                </button>
+			</form>	
+            
+            <p class="RICERCA-AVANZATA">
+           		<a href="ricerca_avanzata.html"> Ricerca Avanzata </a>
+   	    	</p>
+			
+			<p class="LOGIN">
+           		Benvenuto! 
+                <a href="accesso.html"> Accedi </a>
+	            o
+                <a href="registrazione.html"> Registrazione</a>
+   	    	</p>
+   	    	
+		</header> <!-- fine intestazione -->
+		<hr />
+
+		
+		<div id="CONTENUTO"> <!--inizio contenuto -->
+			<img src="immagini/monitor1.jpg" width="380" height="285" class="IMM1"/>
+        	<img src="immagini/pc1.jpg" width="361" height="271" class="IMM2"/>
+        	<img src="immagini/hd2.jpg" width="279" height="184" class="IMM3"/>
+        	<img src="immagini/pc2.jpg" width="287" height="235" class="IMM4"/>
+        	<img src="immagini/hd1.jpg" width="248" height="204" class="IMM5"/>
+		</div> <!-- fine contenuto -->
+		
+		<footer id="FOOTER"> <!-- inizio pie di pagina -->
+			<p class="FOO">Copyright &copy; 2013 Simone Boioli </p>
+		</footer> <!-- fine pie di pagina -->
+	
+</body>
+</html>

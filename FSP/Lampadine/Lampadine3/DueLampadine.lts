@@ -1,0 +1,18 @@
+/*
+	Modellare una lampdina che si accende e si spegne ciclicamente.
+	Quando è accesa la lampadina può rompersi
+*/
+
+LAMPADINA = LAMPADINASPENTA,
+
+LAMPADINASPENTA = (
+					accendi -> LAMPADINAACCESA
+			      ),
+LAMPADINAACCESA = (
+					spegni -> LAMPADINA |
+					rompi -> STOP
+				  ).
+
+||DUELAMPADINE = (
+					l[0..1]:LAMPADINA
+				).

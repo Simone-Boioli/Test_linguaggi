@@ -1,0 +1,32 @@
+/*Una base di dati viene consultata e aggiornata da N processi. 
+Ogni processo accede ciclicamente alla base di dati specificando, 
+per ogni operazione, se voglia accedere in lettura o in scrittura. 
+si vuole garantire che le operazioni di scrittura avvengano con accesso esclusivo; 
+le operazioni di lettura possono invece essere simultanee fra loro (ma non con quella di scrittura).
+Nel caso in cui sia stata richiesta una scrittura, il sistema deve consentire che si concludano le letture in corso, 
+ma deve poi dare la precedenza alla scrittura.
+*/
+
+const NUMPROC = 3
+range IDPROC = 0..NUMPROC-1
+range CONTAPROC = 0..NUMPROC
+
+const FALSE = 0
+const TRUE = 1
+range BOOLEAN = FALSE..TRUE
+
+PROCESSO = (
+	iniziaLettura -> fineLettura -> PROCESSO |
+	chiediScrittura -> iniziaScrittura -> fineScrittura -> PROCESSO
+).
+
+BASIDIDATI = BASIDIDATI[0][FALSE][FALSE],
+BASIDIDATI[numLettura:CONTAPROC][richiestaScrittura:BOOLEAN][inScrittura:BOOLEAN] =(
+	when ((richiestaScrittura==FALSE) && (inScrittura==FALSE)) iniziaLettura -> BASIDIDATI[numLettura+1][richiestaScrittura][inScrittura]|
+	fineLettura -> BASIDIDATI[numLettura-1][richiestaScrittura][inScrittura] |
+	when(richiestaScrittura==FALSE) chiediScrittura	-> BASIDIDATI[numLettura][TRUE][inScrittura] |
+	when((inScrittura==FALSE) && (numLettura==0)) iniziaScrittura -> BASIDIDATI[numLettura][FALSE][TRUE] |
+	fineScrittura -> BASIDIDATI[numLettura][richiestaScrittura][FALSE]
+).
+
+||SYS=(p[IDPROC]:PROCESSO || p[IDPROC]::BASIDIDATI).

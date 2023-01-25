@@ -1,0 +1,88 @@
+
+public class Aeroporto {
+	private String codiceATA;
+	private String nome;
+	private TorreControllo torreDiControllo;
+	private Pista[]piste;
+	private Hangar[]hangar;
+	
+	private int codTorre;
+	
+	public Aeroporto(String cod, String nome,  Pista[] piste, Hangar[]hangar, int freq){
+		this.codiceATA = cod;
+		this.nome = nome;
+		this.piste = piste;
+		this.hangar = hangar;
+		//torreDiControllo.setFrequenzaRadio(freq);
+		this.codTorre = freq;
+		
+	}
+	
+	public boolean autorizzaDecollo(int nPista, int nHangar){
+		Pista pistaDecollo = null;
+		Hangar numHangar = null;
+		for(int i=1; i<=piste.length; i++){
+			if(nPista == i){
+				pistaDecollo = piste[i];
+			}
+		}
+		for(int i=1; i<=hangar.length; i++){
+			if(nHangar == i){
+				numHangar = hangar[i];
+			}
+		}
+		if(pistaDecollo.getInUso() == false && numHangar.getInUso()==true){
+			pistaDecollo.setInUso(true);
+			numHangar.setInUso(false);
+			return true;
+		}else{
+			return false;
+		}
+		
+	}
+	
+	public boolean autorizzaAttarreggio(int freqRadio, double volAereo){
+		boolean freq;
+		if(freqRadio == torreDiControllo.getFrequenzaRadio()){
+			freq=true;
+		}else{
+			freq=false;
+		}
+		Pista pistaAtterraggio = null;
+		Hangar hangarVuoto = null;
+		
+		for(int i = 0; i<piste.length; i++){
+			if(piste[i] == null){
+				pistaAtterraggio = piste[i];
+			}
+		}
+		for(int i = 0; i<hangar.length; i++){
+			if(hangar[i] == null){
+				hangarVuoto = hangar[i];
+			}
+		}
+		boolean pistaLibera;
+		if(pistaAtterraggio != null){
+			pistaLibera = true;
+		}else{
+			pistaLibera = false;
+		}
+		boolean hangarLibero;
+		if(hangarVuoto != null && volAereo < hangarVuoto.getVolume()){
+			hangarLibero = true;
+		}else{
+			hangarLibero = false;
+		}
+		
+		if(freq == true && pistaLibera == true && hangarLibero == true){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	public String toString(){
+		return "Aeroporto "+nome+ "codiceATA"+codiceATA + "torre controllo" + torreDiControllo.getFrequenzaRadio();
+	}
+
+}

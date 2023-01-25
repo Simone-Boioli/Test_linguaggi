@@ -1,0 +1,19 @@
+import java.io.Serializable;
+
+
+public class ElementoContainer implements Serializable{
+	private ElementoContainer next, prev;
+	/*
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 */
+}

@@ -1,0 +1,26 @@
+/*
+	Un controllore di un parcheggio dotato di 4 posti auto permette l'ingersso alle auto solamete
+	se ci sono posti liberi e permette l'uscita solamente se ci sono posti occupati
+	Modellare e implementare in java un sistema composto dal controllore e da 6 auto che entrano
+	ed escono ciclicamente dal parcheggio 
+*/
+
+const NUMPOSTI = 4
+range STATOPARCHEGGIO = 0..NUMPOSTI
+const NUMAUTO = 6
+range IDAUTO = 0..NUMAUTO-1 
+
+AUTO = (
+  			entra -> esce -> AUTO
+		).
+
+
+PARCHEGGIO = PARCHEGGIO[0],
+PARCHEGGIO[postiOccupati:STATOPARCHEGGIO] = 
+						( when(postiOccupati < NUMPOSTI) a[IDAUTO].entra -> PARCHEGGIO[postiOccupati + 1] |
+					      when(postiOccupati > 0) a.[IDAUTO].esci  -> PARCHEGGIO[postiOccupati -1]
+				        ).
+
+||SYS = (a[IDAUTO]:AUTO || PARCHEGGIO). 
+
+			 

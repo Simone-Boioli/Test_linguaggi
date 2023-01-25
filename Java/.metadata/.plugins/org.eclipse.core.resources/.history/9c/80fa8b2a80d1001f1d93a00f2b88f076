@@ -1,0 +1,25 @@
+
+public class Film {
+	private String titolo;
+	private boolean disponibile;
+	private int costoPerOra;
+	
+	
+	public Film(String titolo, boolean disponibile, int costoPerOra){
+		disponibile = true;
+		
+	}
+	
+	public boolean affitta(){
+		if(disponibile = true){
+			disponibile = false;
+		}
+		return disponibile;
+	}
+	
+	public void restituisci(){
+		disponibile = true;
+	}
+	
+	
+}

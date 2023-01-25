@@ -1,0 +1,17 @@
+public class Prova {
+	public static void main(String[]args){
+		int N;
+		do { System.out.println("Inserisci la lunghezza del vettore");          // ti continua a richiedere                                
+			 N=SavitchIn.readLineInt();                                                       //finche n non è > di 0
+		}while (N<=0);                                                                                 //
+		
+		int[]vet=new int[N];   // dichiara un vettore n di n elementi 
+		
+		for(int i=0;i<vet.length;i++){                                 // passa il vettore e lo riempie con l'imput
+			vet[i]=(int) (SavitchIn.readLineDouble());     //
+		}
+		for(int i=0;i<vet.length;i++){     //
+			System.out.print(vet[i]);      // Visualizza il vettore
+		}
+	}
+}

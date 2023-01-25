@@ -1,0 +1,19 @@
+/*
+	Sistema concorrente composto da 2 processi sender e 1 receiver. Il primo processo sender genera e invia pacchetti Http al receiver. 
+	Il secondo genera e invia messaggi SOAP al receiver. Il receiver conta il numero totale di messaggi ricevuti.
+*/
+
+SENDER1 = (
+			generaHttp -> inviaHttp -> SENDER1
+		).
+
+SENDER2 = (
+			generaSOAP -> inviaSOAP -> SENDER2
+		).
+
+RECEIVER = (
+			inviaHttp -> conta -> RECEIVER |
+			inviaSOAP -> conta -> RECEIVER
+		).
+
+||SYS = (SENDER1 || SENDER2 || RECEIVER).

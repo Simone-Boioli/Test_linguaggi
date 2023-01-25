@@ -1,0 +1,39 @@
+/**Scrivere un programma che definisce una classe Casa, caratterizzata 
+ * dalla superficie e dal costo. Gli attributi devono essere incapsulati.
+
+La classe definisce un metodo aggiornaCosto(float costoMetro), che 
+aggiorna il costo dell’appartamento moltiplicando la superficie per 
+costoMetro. Cio’ avviene solo nel caso in cui il costo calcolato sia 
+maggiore di quello gia’ memorizzato.
+La classe definisce un metodo calcolaCostoMetro() che restituisce il
+ costo per metro dell’appartamento.
+Definire inoltre una classe Immobiliare con un main:
+
+    * legge due coppie di valori {superficie, costo};
+    * istanzia due Case, settando rispettivamente le due coppie di 
+    * valori lette;
+    * istanzia una terza Casa, settando superficie 100 e costo non 
+    * specificato;
+    * aggiorna il costo della terza casa utilizzando il massimo fra 
+    * i costi al metro delle due case istanziate in precedenza;
+    * visualizza, per ciascuna casa, superficie e costo.
+*/
+
+public class Casa {
+	private float superficie;
+	private float costo;
+	
+	public void aggiornaCosto(float costoMetro){
+		float costo2;
+		costo2=superficie*costoMetro;
+		
+		if(costo<costo2){
+			costo=costo2;
+		}
+	}
+	
+	public float calcolaCostoMetro(){
+		return(costo/superficie);
+	}
+		
+}

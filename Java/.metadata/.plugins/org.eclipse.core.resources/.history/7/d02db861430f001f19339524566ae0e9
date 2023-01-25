@@ -1,0 +1,11 @@
+
+public class Tavolo {
+	private Territorio[] stati;
+	
+	public Tavolo(){
+		int numTerritori=40;
+		stati=new Territorio[numTerritori];
+		
+	}
+	
+}

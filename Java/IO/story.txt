@@ -1,0 +1,11 @@
+Elementi in base a cui matura la tredicesima:
+Il calcolo della tredicesima dipende da alcune specifichi criteri di 
+calcolo propri di ogni singolo c.c.n.l. In linea generale, il calcolo 
+della tredicesima è pari all’importo percepito mensilmente per i 
+lavoratori con retribuzione fissa mensile o ad un determinato numero 
+di ore per il personale che riceve un salario in base alle ore 
+effettive di lavoro. L’importo di riferimento è quello dell’ultima 
+mensilità percepita, quindi un importo pari alla mensilità 
+di dicembre se il contratto di lavoro è ancora in essere o pari all’
+importo dell’ultimo stipendio in caso di cessazione del contratto di
+lavoro.

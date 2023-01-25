@@ -1,0 +1,14 @@
+/*
+	Modellare un sistema composto da 2 porte automatiche che si 
+	aprono e si chiudono quando si avvicina qualcuno.
+*/
+
+PORTA1 = (
+			apri1 -> chiudi1 -> PORTA1
+).
+
+PORTA2 = (
+			apri2 -> chiudi2 -> PORTA2
+).
+
+||PORTE = (PORTA1 || PORTA2).

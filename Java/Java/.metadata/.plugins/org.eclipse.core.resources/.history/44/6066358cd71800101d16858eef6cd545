@@ -1,0 +1,16 @@
+
+public class Reddito {
+	private String cognome;
+	private int stipendioAnnuo;
+	private int anniAnzianita;
+	
+	public boolean aggiornaStipendio(){
+		int stipendioAnnuoAgg = 1000+(50*anniAnzianita);
+		if(stipendioAnnuoAgg != stipendioAnnuo){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+}

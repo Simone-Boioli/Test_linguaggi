@@ -1,0 +1,29 @@
+
+public class Prova {
+
+	
+	public static void main(String[] args) {
+		Cliente cliente1 = new Cliente("Mario", "rossi");
+		Cliente cliente2 = new Cliente("Luigi", "bianchi");
+		Cliente cliente3 = new Cliente("Giacomo", "verdi");
+		
+		Coda coda = new Coda();
+		
+		coda.inserisci(cliente1);
+		System.out.println("head="+coda.head.getNome());
+		System.out.println("tail="+coda.tail.getNome());
+		
+		coda.inserisci(cliente2);
+		System.out.println("\nhead="+coda.head.getNome());
+		System.out.println("tail="+coda.tail.getNome());
+		
+		
+		coda.inserisci(cliente3);
+		System.out.println("\nhead="+coda.head.getNome());
+		System.out.println("tail="+coda.tail.getNome());
+		
+		System.out.println(coda.head.getSuccessivo().getNome());
+		System.out.println(coda.tail.getSuccessivo().getNome());
+	}
+
+}

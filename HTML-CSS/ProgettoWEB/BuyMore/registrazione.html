@@ -1,0 +1,109 @@
+<!-- HTML 5 -->
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset=utf-8" />
+	<title> Registrazione </title>
+    <link rel="stylesheet" type="text/css" href="style.css" /> <!--  per importare il css -->
+</head>
+
+<body>
+		<header id="BANNER"> <!--intestazione -->
+			<!--logo -->
+			<a href="index.html">
+				<img class="LOGO" src="immagini/logo.png" />	
+			</a>
+			
+			<!-- form per la ricerca di un articolo -->
+			<form action="s_cercaProdotto" method="get">
+				<!-- selezione -->
+				<select class="SELEZIONE_RICERCA" name="prodotti">
+                	<option value="tutteLeCategorie" selected="selected">Tutte le Categorie</option>
+                    <option value="monitor">Monitor</option>
+                    <option value="notebook">Notebook</option>
+                    <option value="hd">Hard Disk</option>
+                </select>
+                
+                <!--testo ricerca -->
+                <input class="TESTO_RICERCA" type="search" name="testoRicerca" />
+                
+                <!-- bottone ricerca -->
+                <button class="BOTTONE_INVIO" type="submit">
+                    Cerca
+                </button>
+			</form>	
+            
+            <p class="RICERCA-AVANZATA">
+           		<a href="ricerca_avanzata.html"> Ricerca Avanzata </a>
+   	    	</p>
+			
+		</header> <!-- fine intestazione -->
+		<hr />
+		
+		<div id="REGISTRAZIONE"> <!-- inizio contenuto -->
+         	<h1 class="TITOLO"> Registrazione </h1>
+            
+            <br />
+            <br />
+            <br />
+            <br />
+          
+          	<form action="s_registraUtente" method="get">  
+	        	<fieldset class="GRANDEZZA">
+	                <legend> Registrazione </legend>
+	                
+	                <span class="FONT_RICHIESTE"> Nome: </span>  <br />
+	         		<input class="TESTO_DATI_RICHIESTE" type="text" name="nome" />
+	                
+	                <br />
+	                <br />
+	                <br />
+	                
+	                <span class="FONT_RICHIESTE"> Cognome: </span>   <br />
+	         		<input class="TESTO_DATI_RICHIESTE" type="text" name="cognome" />
+	                
+	                <br />
+	                <br />
+	                <br />
+	                
+	                <span class="FONT_RICHIESTE"> Email: </span>  <br />
+	        		<input class="TESTO_DATI_RICHIESTE" type="email" name="email" />
+	         	       
+	                <br />
+	                <br />
+	                <br />
+	                
+	                <span class="FONT_RICHIESTE"> Id Utente: </span>  <br /> 
+	         		<input class="TESTO_DATI_RICHIESTE" type="text" name="idutente" />
+	                
+	                <br />
+	                <br />
+	                <br />
+	                
+	                <span class="FONT_RICHIESTE"> Password: </span>  <br />
+	        		<input class="TESTO_DATI_RICHIESTE" type="password" name="pass" />
+	                
+	                <br />
+	                <br />
+	                
+	          </fieldset>
+                
+                <p class="FONT_REGISTRAZIONE">
+                    Cliccando sul pulsante "Crea Account" dichiari di aver letto e accetti le nostre Condizioni generali di uso e vendita e la normativa sulla  	privacy.
+                </p>
+                	
+                    
+                <button class="BOTTONE_REGISTRAZIONE" type="submit">
+                  		Crea Account
+                </button>
+                	
+            </form>
+        </div> <!-- fine contenuti -->
+        
+        <footer id="FOOTER"> <!-- inizio pie di pagina -->
+			<p class="FOO">Copyright &copy; 2013 Simone Boioli </p>
+		</footer> <!-- fine pie di pagina -->
+</body>
+</html>

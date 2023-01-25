@@ -1,0 +1,21 @@
+import junit.framework.TestCase;
+
+
+public class TestAeroporto extends TestCase {
+
+	public void testAutorizzaDecollo() {
+		Hangar hangar[] = {
+				new Hangar(12,34,56),
+				new Hangar(20,20,20)
+		};
+		Pista piste[]={new Pista(1001,50));
+		
+		Aeroporto orio = new Aeroporto("BGY", "Orio al Serio", piste, hangar);
+		
+	}
+
+	public void testAutorizzaAttarreggio() {
+		fail("Not yet implemented");
+	}
+
+}

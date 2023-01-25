@@ -1,0 +1,10 @@
+<!ELEMENT magazzino (prodotto)*>
+<!ELEMENT prodotto (articolo)>
+<!ELEMENT articolo (marca, codice, prezzo, numeroPezzi)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT codice (#PCDATA)>
+<!ELEMENT prezzo (#PCDATA)>
+<!ELEMENT numeroPezzi (#PCDATA)>
+
+<!ATTLIST prodotto
+	nome CDATA #REQUIRED>

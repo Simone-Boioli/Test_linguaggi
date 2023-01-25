@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Prova&apos; to &apos;UfficioPostale&apos;&#x0D;&#x0A;- Original project: &apos;CodaPosta&apos;&#x0D;&#x0A;- Original element: &apos;Prova&apos;&#x0D;&#x0A;- Renamed element: &apos;UfficioPostale&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Prova&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Prova.java[Prova" matchStrategy="1" name="UfficioPostale" qualified="false" references="true" similarDeclarations="false" stamp="1308523123484" textual="false" version="1.0"/>
+</session>

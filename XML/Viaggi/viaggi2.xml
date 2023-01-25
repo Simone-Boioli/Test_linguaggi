@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE viaggi SYSTEM "esterno.dtd"
+[
+    <!ATTLIST volo2
+	stato (regolare | cancellato) "regolare" >
+
+]>
+
+<viaggi>
+    <volo1> Milano - Roma </volo1>
+
+    <volo2 stato="regolare">
+	Roma - Napoi
+    </volo2> 
+</viaggi>

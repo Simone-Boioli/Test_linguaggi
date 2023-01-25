@@ -1,0 +1,20 @@
+
+public class Immobiliare {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//inserire savitchin
+		float superficie=54;
+		float costo=5000;
+		
+		float superficie1=32;
+		float costo1=2769;
+		
+		Casa casa1=new Casa(superficie,costo);
+		Casa casa2=new Casa(superficie1,costo1);
+		
+	}
+
+}

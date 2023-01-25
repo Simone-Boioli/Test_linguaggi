@@ -1,0 +1,14 @@
+P = (
+		p_prepara -> p_doA -> p_doB -> p_fine -> P
+).
+
+Q = (
+		q_prepara -> q_doA -> q_doB -> q_fine -> Q
+).
+
+RISORSA = (
+		p_doA -> p_doB -> RISORSA |
+		q_doA -> q_doB -> RISORSA
+).
+
+||SYS = (P || Q || RISORSA).

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE classe [
+    <!ELEMENT classe	(docenti, studenti)+>
+    <!ELEMENT docenti	(#PCDATA)>
+    <!ELEMENT studenti	(#PCDATA)>
+
+    <!ENTITY UNIMIB "Università di Milano-Bicocca">
+]>
+
+<classe>
+    <docenti> 
+	Docenti della &UNIMIB;
+    </docenti>
+
+    <studenti>
+	Studenti della &UNIMIB;
+    </studenti>
+</classe>

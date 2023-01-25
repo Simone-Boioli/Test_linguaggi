@@ -1,0 +1,13 @@
+
+public class Silos {
+	private String nome;
+	private int larghezza;
+	private int altezza;
+	
+	public Silos(String nome, int capacità, int larghezza, int altezza){
+		this.nome = nome;
+		this.larghezza = larghezza;
+		this.altezza = altezza;
+		int capienza = capacità;
+	}
+}

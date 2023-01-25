@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE utenti SYSTEM "utenti.dtd">
+<utenti>
+      <utente>
+            <nome>ghiro</nome>
+            <cognome>ghiro</cognome>
+            <idUtente>ghiro</idUtente>
+            <pass>ghiro</pass>
+            <email>g@mail.it</email>
+            <denaro>100</denaro>
+            <punti>0</punti>
+      </utente>
+      <utente>
+            <nome>kristina</nome>
+            <cognome>franceschi</cognome>
+            <idUtente>kristina</idUtente>
+            <pass>kristina</pass>
+            <email>k@mail.it</email>
+            <denaro>100</denaro>
+            <punti>0</punti>
+      </utente>
+      <utente>
+            <nome>matteo</nome>
+            <cognome>piagno</cognome>
+            <idUtente>matteo</idUtente>
+            <pass>matteo</pass>
+            <email>m@mail.it</email>
+            <denaro>100</denaro>
+            <punti>0</punti>
+      </utente>
+      <utente>
+            <nome>fabio</nome>
+            <cognome>cogliati</cognome>
+            <idUtente>fabio</idUtente>
+            <pass>fabio</pass>
+            <email>f@mail.it</email>
+            <denaro>100</denaro>
+            <punti>0</punti>
+      </utente>
+      <utente>
+            <nome>anna</nome>
+            <cognome>buratti</cognome>
+            <idUtente>anna</idUtente>
+            <pass>anna</pass>
+            <email>b@mail.it</email>
+            <denaro>100</denaro>
+            <punti>0</punti>
+      </utente>
+      <utente>
+            <nome>simone</nome>
+            <cognome>boioli</cognome>
+            <idUtente>simone</idUtente>
+            <pass>simone</pass>
+            <email>s.boioli1@campus.unimib.it</email>
+            <denaro>100</denaro>
+            <punti>0</punti>
+      </utente>
+      <utente>
+            <nome>esame</nome>
+            <cognome>esame oggi</cognome>
+            <idUtente>esame</idUtente>
+            <pass>esame</pass>
+            <email>e@mail.it</email>
+            <denaro>100</denaro>
+            <punti>0</punti>
+      </utente>
+</utenti>

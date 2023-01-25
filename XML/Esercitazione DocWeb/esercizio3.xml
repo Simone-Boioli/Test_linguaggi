@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE esercizio3
+[
+	<!ELEMENT esercizio1 ((A*),(B | C))+ >
+	<!ELEMENT A (#PCDATA)>
+	<!ELEMENT B (#PCDATA)>
+	<!ELEMENT C (#PCDATA)>
+	<!ATTLIST A
+		Att1 CDATA #REQUIRED>
+	<!ATTLIST B
+		Att3 (s1 | s2 | s3) "s2">
+]>
+
+<esercizio3>
+	<A Att1="attributo"> Elemento A </A>
+	<B Att3="s2"> Elemento B </B>
+
+	<A Att1="attributo"> Elemento A </A>
+
+	<A Att1="attributo"> Elemento A </A>
+	<C> Elemento C </C>
+</esercizio3>

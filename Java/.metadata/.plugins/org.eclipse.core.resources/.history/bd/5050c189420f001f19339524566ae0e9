@@ -1,0 +1,13 @@
+
+public class Territorio {
+	private String nome;				//nome del territorio
+	private int numeroTank;				//numero di carrarmati presenti sul territorio
+	private Giocatore proprietario;		//Giocatore che possiede il territorio
+	
+	public Territorio(String name){		//costruttore del territorio
+		nome=name;
+		numeroTank=0;
+		proprietario=null;
+	}
+	
+}

@@ -1,0 +1,52 @@
+
+public class LettoreDvd {
+	private int regionCode;
+	private boolean inVisione = false;  //se true, legge un dvd inserito
+	
+	public LettoreDvd(int cod){
+		regionCode = cod;
+	}
+	Dvd disco = new Dvd();
+	
+	public boolean inserisciDvd(Dvd disco){
+		if(inVisione == false){
+			inVisione = true;
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	public int rimuoviDvd(){
+		int disc = 0;
+		if(inVisione == true){
+			inVisione = false;
+			disc = 1;
+		}
+		return disc;
+	}
+	
+	public boolean play(){
+		if(inVisione == true){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	public boolean stop(){
+		return true;
+	}
+
+	
+	public String toString() {
+		String s ="LettoreDvd [regionCode=" + regionCode;
+		if(this.inserisciDvd(disco) == true){
+			s = s + disco.toString();
+		}
+		return s;
+	}
+	
+	
+	
+}

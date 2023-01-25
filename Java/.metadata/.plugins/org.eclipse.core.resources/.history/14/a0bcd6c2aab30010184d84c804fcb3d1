@@ -1,0 +1,21 @@
+package RubricaGUI;
+
+import java.awt.*;
+
+public class FinestraPrincipale extends Frame {
+	Button cerca;
+	Button insert;
+	Button delete;
+	
+	public FinestraPrincipale(){
+		setSize(400,200);
+		setLocation(400,400);
+		setVisible(true);
+		
+		cerca = new Button("cerca");
+		
+		add(cerca);
+		
+	}
+	
+}

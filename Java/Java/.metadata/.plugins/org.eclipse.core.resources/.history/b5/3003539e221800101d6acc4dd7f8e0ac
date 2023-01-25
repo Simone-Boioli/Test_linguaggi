@@ -1,0 +1,17 @@
+
+public class Test {
+	
+	public static void main(String[] args) {
+		Silos primo;
+		Silos secondo;
+		Auto a1;
+		
+		primo = new Silos("primo", 3, 160, 165);
+		secondo = new Silos("secondo", 50, 170, 200);
+		
+		a1 = new Auto(133, 136, "BM374LA");
+		//System.out.println(primo.entrata(a1) + " " +a1.toString());
+		System.out.println(primo.toString());
+	}
+
+}

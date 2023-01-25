@@ -1,0 +1,38 @@
+/* Una fabbrica produce pupazzi composti di due parti: una sinistra e una destra. 
+ La lavorazione viene svolta da NPD produttori di parti destre, NPS produttori di parti 
+ sinistre e NA assemblatori che si occupano di comporre i pezzi. 
+I produttori depositano in un serbatoio avente una capacità C le parti via via prodotte. 
+Ogni assemblatore preleva dal serbatoio una parte destra e una sinistra (in qualsiasi ordine) e 
+le unisce. 
+Modellare il problema utilizzano NPD=2, NPS=2, NA=2 e C=4
+*/
+
+const NPD = 2 //produttore parte destra
+const NPS = 2 //produttore parte sinistra
+const NA = 2 //assemblatori
+const C = 4 //capacità serbatoio
+
+const Sx = 0
+const Dx = 1
+
+
+SERBATOIO = SERBATOIO[0][0],
+SERBATOIO[psx:0..C][pdx:0..C] = (
+	when(psx > 0) a[1..NA].prendi[Sx] -> SERBATOIO[psx-1][pdx] |
+	when(pdx > 0) a[1..NA].prendi[Dx] -> SERBATOIO[psx][pdx-1] |
+	when((psx+pdx) < C && psx < C-1) ps[1..NPS].deposita[Sx] -> SERBATOIO[psx+1][pdx] |
+	when((psx+pdx) < C && pdx < C-1) ps[1..NPD].deposita[Dx] -> SERBATOIO[psx][pdx+1]
+).
+
+PRODUTTORE(T = Sx) = (
+	produci[T] -> deposita[T] -> PRODUTTORE
+).
+
+ASSEMBLATORE = (
+	prendi[Sx] -> prendi[Dx] -> assembla -> ASSEMBLATORE |
+	prendi[Dx] -> prendi[Sx] -> assembla -> ASSEMBLATORE
+).
+
+||FABBRICA = (SERBATOIO || ps[1..NPS]:PRODUTTORE(Sx) || ps[1..NPD]:PRODUTTORE(Dx) || a[1..NA]:ASSEMBLATORE).
+
+

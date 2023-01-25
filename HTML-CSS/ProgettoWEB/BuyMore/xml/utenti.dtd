@@ -1,0 +1,9 @@
+<!ELEMENT utenti (utente)*>
+<!ELEMENT utente (nome, cognome, email, idUtente, pass,denaro,punti)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT cognome (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT idUtente (#PCDATA)>
+<!ELEMENT pass (#PCDATA)>
+<!ELEMENT denaro (#PCDATA)>
+<!ELEMENT punti (#PCDATA)>

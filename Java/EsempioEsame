@@ -1,0 +1,17 @@
+Scrivete un programma che prende da riga di comando i seguenti argomenti:
+
+    il nome di un file di testo di input filein
+    un valore numerico nwords
+    una sequenza di nwords parole
+
+e che stampa a video il numero di occorrenze delle parole indicate dalla sequenza che si trovano all'interno del file filein.
+
+Ad esempio:
+java prog miofile.txt 4 pippo pluto paperino topolino
+
+deve stampare il numero di occorrenze delle parole pippo, pluto, paperino e topolino che sono state trovate all'interno di miofile.txt.
+
+
+1. Gestite TUTTI gli errori che possono verificarsi con eccezioni (anche se in alcuni casi è esagerato).
+2. Mascherate le eccezioni standard con delle eccezioni custom.
+3. Non preoccupatevi di fare la ricerca delle occorrenze in modo ottimale. Una ricerca sequenziale è ok.

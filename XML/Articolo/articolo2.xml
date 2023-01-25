@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE articolo 
+[
+    <!ELEMENT articolo	    (titolo, autore+, (parolachiave | sommario), (sezione | paragrafo*))>
+    <!ELEMENT titolo	    (#PCDATA)>
+    <!ELEMENT autore	    (#PCDATA)>
+    <!ELEMENT parolachiave  (#PCDATA)>
+    <!ELEMENT sommario	    (#PCDATA)>
+    <!ELEMENT sezione	    (#PCDATA)>
+    <!ELEMENT paragrafo	    (#PCDATA)>
+]>
+
+<articolo>
+    <titolo>  Libro di Xml </titolo>
+
+    <autore> Huu Le Van </autore>
+
+    <sommario>
+	pag 0.....cap 1
+	pag 10....cap 2
+	pag 25....cap 3
+    </sommario>
+
+    <paragrafo>
+	______Capitolo 1______
+	
+	Libro che spiega l'xml
+	......................
+	......................
+	......................
+    </paragrafo>
+</articolo>

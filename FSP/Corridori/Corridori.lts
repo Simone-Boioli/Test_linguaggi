@@ -1,0 +1,14 @@
+/*
+	Due corridori che partono simultaneamente al momento del via, corrono lungo un percorso con 2 ostacoli
+	da saltare ed infine tagliano il traguardo
+*/
+
+CORRIDORE1 = (
+				partenza -> salta11 -> salta12 -> arrivo1 -> STOP
+			).
+
+CORRIDORE2 = (
+				partenza -> salta21 -> salta22 -> arrivo2 -> STOP
+			).
+
+||CORRIDORI = (CORRIDORE1 || CORRIDORE2).

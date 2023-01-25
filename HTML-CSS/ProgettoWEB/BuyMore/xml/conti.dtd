@@ -1,0 +1,5 @@
+<!ELEMENT conti (conto)+>
+<!ELEMENT conto (#PCDATA)>
+
+<!ATTLIST conto
+	idUtente CDATA #REQUIRED>

@@ -1,0 +1,19 @@
+/* Modellare un processo PRODUTTORE che produce dei valori che vengono memorizzati in un processo BUFFER e letti da un processo
+   CONSUMATORE. Il buffer è dotato di memoria di capacità 1, quindi ad ogni lettura può solamente seguire una scrittura. 	
+*/
+
+PRODUTTORE = (
+				produciValore -> memorizzaValore -> PRODUTTORE
+			).
+
+CONSUMATORE = (
+				leggiValore -> consumaValore -> CONSUMATORE
+			).	
+
+BUFFER = (
+			memorizzaValore -> leggiValore -> BUFFER
+		).
+
+||SYS = (
+			PRODUTTORE || CONSUMATORE || BUFFER
+		).

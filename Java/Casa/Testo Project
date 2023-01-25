@@ -1,0 +1,39 @@
+Scrivere un programma che definisce una classe Finestra, caratterizzata da una larghezza e lunghezza (riferite ai centimetri). Gli attributi sono public.
+
+La classe definisce un metodo calcolaSuperficie() che restituisce la superficie in metri quadrati (valore decimale).
+
+Scrivere un programma che definisce una classe Stanza, caratterizzata da una larghezza e lunghezza (riferite ai metri; viene dato per scontato che si tratta di una stanza rettangolare) e da un array di Finestre. Gli attributi sono public.
+
+La classe definisce:
+
+    * un metodo calcolaSuperficie() che restituisce la superficie in metri quadrati (valore decimale) della Stanza
+    * un metodo calcolaSuperficieFinestre() che restituisce la superficie in metri quadrati (valore decimale) totale delle finestre della Stanza.
+    * un metodo calcolaRapportoIlluminazione() che restituisce il rapporto (decimale) tra la superficie della Stanza e la superficie delle finestre della Stanza (entrambi espressi in metri quadrati), utilizzando i due metodi sopra descritti.
+
+Definire poi una classe Casa, caratterizzata da un array di Stanze.
+
+La classe definisce:
+
+    * un metodo calcolaSuperficie() che restituisce la superficie in metri quadrati (valore decimale) della Casa
+    * un metodo calcolaSuperficieFinestre() che restituisce la superficie in metri quadrati (valore decimale) totale delle finestre della Casa.
+    * un metodo calcolaRapportoIlluminazione() che restituisce il rapporto (decimale) tra la superficie della Casa e la superficie delle finestre della Casa (entrambi espressi in metri quadrati), utilizzando i due metodi sopra descritti.
+    * un metodo calcolaRapportoIlluminazioneMedio() che restituisce la media (decimale) dei rapporti di illuminazione delle Stanze della Casa
+
+Definire inoltre una classe RapportiIlluminanti con un main che:
+
+    * istanzia una Casa;
+    * istanzia una Stanza "stanza1";
+    * imposta la larghezza e la lunghezza della stanza1 rispettivamente a 6 e 8
+    * istanzia una Finestra di 60 X 100 cm. e la aggiunge alle Finestre di stanza1;
+    * istanzia una Finestra di 180 X 230 cm. e la aggiunge alle Finestre di stanza1;
+    * istanzia una Finestra di 60 X 120 cm. e la aggiunge alle Finestre di stanza1;
+    * istanzia una Stanza "stanza2";
+    * imposta la larghezza e la lunghezza della stanza2 rispettivamente a 4 e 3
+    * istanzia una Finestra di 90 X 120 cm. e la aggiunge alle Finestre di stanza2;
+    * istanzia una Finestra di 80 X 100 cm. e la aggiunge alle Finestre di stanza2;
+    * aggiunge stanza1 e stanza2 alle Stanze della Casa
+    * visualizza, per ciascuna stanza, il rapporto illuminante.
+    * visualizza il rapporto illuminante totale
+    * visualizza il rapporto illuminante medio
+
+

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE AZ[
+	<!ELEMENT AZ (A)+>
+	<!ELEMENT A      (#PCDATA)>
+]>
+
+
+<AZ>
+	<A att ="attributo">Testo di A</A>
+</AZ>

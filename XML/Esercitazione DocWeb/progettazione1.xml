@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE progettazione1
+[
+	<!ELEMENT progettazione1 (intinerario+)>
+	<!ELEMENT intinerario (stazionePartenza, stazioneArrivo, tempoPercorrenza, tratta)>
+	<!ELEMENT tratta (stazionePartenza, stazioneArrivo, orarioPartenza, orarioArrivo, durataViaggio, IDTreno, IDTipoTreno, (servizi)+)>
+	<!ELEMENT stazionePartenza (#PCDATA)>
+	<!ELEMENT stazioneArrivo   (#PCDATA)>
+	<!ELEMENT tempoPercorrenza (#PCDATA)>
+	<!ELEMENT orarioPartenza   (#PCDATA)>
+	<!ELEMENT orarioArrivo     (#PCDATA)>
+	<!ELEMENT durataViaggio    (#PCDATA)>
+	<!ELEMENT IDTreno          (#PCDATA)>
+	<!ELEMENT IDTipoTreno      (#PCDATA)>
+	<!ELEMENT servizi          (#PCDATA)>
+]>
+
+<progettazione1>
+	<intinerario>
+		<stazionePartenza> Milano Centrale </stazionePartenza>
+		<stazioneArrivo> Napoli Centrale </stazioneArrivo>
+		<tempoPercorrenza> 4.50 </tempoPercorrenza>
+		<tratta>
+			<stazionePartenza> Milano Centrale </stazionePartenza>
+			<stazioneArrivo> Napoli Centrale </stazioneArrivo>
+			<orarioPartenza> 9:20 </orarioPartenza>
+			<orarioArrivo> 14:10 </orarioArrivo>
+			<durataViaggio> 4.50 </durataViaggio>
+			<IDTreno> 9517 </IDTreno>
+			<IDTipoTreno> FrecciaRossa </IDTipoTreno>
+			<servizi> disabili </servizi>
+			<servizi> bar </servizi> 
+		</tratta>
+	</intinerario>
+	
+	<intinerario>
+		<stazionePartenza> Milano Centrale </stazionePartenza>
+		<stazioneArrivo> Bolzano </stazioneArrivo>
+		<tempoPercorrenza> 3.25 </tempoPercorrenza>
+		<tratta>
+			<stazionePartenza> Milano Centrale </stazionePartenza>
+			<stazioneArrivo> Verona Porta Nuova </stazioneArrivo>
+			<orarioPartenza> 12:05 </orarioPartenza>
+			<orarioArrivo> 13:27 </orarioArrivo>
+			<durataViaggio> 1.22 </durataViaggio>
+			<IDTreno> 37 </IDTreno>
+			<IDTipoTreno> FrecciaBianca </IDTipoTreno>
+			<servizi> disabili </servizi>
+			<servizi> bar </servizi> 
+			<servizi> bicicletta </servizi>
+		</tratta>
+		
+		<tratta>
+			<stazionePartenza> Verona Porta Nuova </stazionePartenza>
+			<stazioneArrivo> Bolzano </stazioneArrivo>
+			<orarioPartenza> 13:50 </orarioPartenza>
+			<orarioArrivo> 15:50 </orarioArrivo>
+			<durataViaggio> 1.40 </durataViaggio>
+			<IDTreno> 2260 </IDTreno>
+			<IDTipoTreno> Regionale Veloce </IDTipoTreno> 
+			<servizi> bicicletta </servizi>
+		</tratta>
+	</intinerario>
+	
+	<intinerario>
+		<stazionePartenza> Como Nord Borghi </stazionePartenza>
+		<stazioneArrivo> Santhià </stazioneArrivo>
+		<tempoPercorrenza> 3.03 </tempoPercorrenza>
+		<tratta>
+			<stazionePartenza> Como Nord Borghi </stazionePartenza>
+			<stazioneArrivo> Saronno </stazioneArrivo>
+			<orarioPartenza> 10:21 </orarioPartenza>
+			<orarioArrivo> 10:57 </orarioArrivo>
+			<durataViaggio> 00.36 </durataViaggio>
+			<IDTreno> 136 </IDTreno>
+			<IDTipoTreno> Regionale </IDTipoTreno> 
+			<servizi> bicicletta </servizi>
+		</tratta>
+		
+		<tratta>
+			<stazionePartenza> Saronno </stazionePartenza>
+			<stazioneArrivo> Milano Centrale </stazioneArrivo>
+			<orarioPartenza> 11:05 </orarioPartenza>
+			<orarioArrivo> 11:35 </orarioArrivo>
+			<durataViaggio> 00.30 </durataViaggio>
+			<IDTreno> 10336 </IDTreno>
+			<IDTipoTreno> Regionale </IDTipoTreno> 
+			<servizi> bicicletta </servizi>
+			<servizi> disabili </servizi>
+		</tratta>
+		
+		<tratta>
+			<stazionePartenza> Milano Centrale </stazionePartenza>
+			<stazioneArrivo> Santhià </stazioneArrivo>
+			<orarioPartenza> 12:15 </orarioPartenza>
+			<orarioArrivo> 13:24 </orarioArrivo>
+			<durataViaggio> 1.19 </durataViaggio>
+			<IDTreno> 2012 </IDTreno>
+			<IDTipoTreno> Regionale Veloce </IDTipoTreno> 
+			<servizi> bicicletta </servizi>
+			<servizi> disabili </servizi>
+		</tratta>
+	</intinerario>
+	
+</progettazione1>

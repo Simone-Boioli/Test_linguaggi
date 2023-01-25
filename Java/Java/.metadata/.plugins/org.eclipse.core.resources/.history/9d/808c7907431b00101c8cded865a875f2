@@ -1,0 +1,35 @@
+
+public class CartaBancomat {
+	private String nome;
+	private int pin;
+	private double massimale; // quanità massima di denaro che è possibile prelevare al giorno
+
+	public CartaBancomat(String nome, int pin, double max){
+		this.nome = nome;
+		this.pin = pin;
+		this.massimale = max;
+	}
+
+	public String toString() {
+		return "CartaBancomat [nome=" + nome + ", pin=" + pin + ", massimale="
+				+ massimale + "]";
+	}
+
+	public int getPin() {
+		return pin;
+	}
+
+	public double getMassimale() {
+		return massimale;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+	
+	
+	
+	
+	
+	
+}

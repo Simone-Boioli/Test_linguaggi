@@ -1,0 +1,26 @@
+
+public class Domanda {
+	protected String testoDomanda;
+	private String rispostaEsatta;
+	
+	public Domanda(){
+		
+	}
+	
+	public Domanda(String testoDomanda, String rispostaEsatta) {
+		this.testoDomanda = testoDomanda;
+		this.rispostaEsatta = rispostaEsatta;
+	}
+
+	public String getTestoDomanda() {
+		return testoDomanda;
+	}
+
+	public String getRispostaEsatta() {
+		return rispostaEsatta;
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,40 @@
+const N = 4 // num persone totali
+range IDPersone = 0..N-1
+const NP = 3 //capienza piazza
+range CONTAPERSONE = 0..NP
+const NT = 2 //posti a teatro
+range CONTAPERSONETEATRO = 0..NT
+
+PERSONA = (
+	entra -> ESCI |
+	entra -> ENTRATEATRO
+),
+ESCI = (
+	esci -> PERSONA
+),
+ENTRATEATRO = (
+	entraTeatro -> esciTeatro -> ESCI
+).
+
+PIAZZA = PIAZZAAPERTA[0],
+PIAZZAAPERTA[num:CONTAPERSONE] = (
+	when(num<NP) p[IDPersone].entra  -> PIAZZAAPERTA[num+1] |
+	p[IDPersone].esci -> PIAZZAAPERTA[num-1] |
+	chiudi-> PIAZZACHIUSA[num]
+),
+PIAZZACHIUSA[num:CONTAPERSONE] = (
+	apri -> PIAZZAAPERTA[num] |
+	p[IDPersone].esci -> PIAZZACHIUSA[num-1]
+).
+
+VIGILE = (
+	chiudi -> apri -> VIGILE
+).
+
+TEATRO = TEATRO[0],
+TEATRO[num:CONTAPERSONETEATRO] = (
+	when(num<NT) p[IDPersone].entraTeatro -> TEATRO[num+1] |
+	p[IDPersone].esciTeatro -> TEATRO[num-1 ]
+).
+
+||SYS = (p[IDPersone]:PERSONA || TEATRO || PIAZZA || VIGILE).

@@ -1,0 +1,1 @@
+SQLCMD -S nome_server\nome_istanza -i Query_Backup.sql

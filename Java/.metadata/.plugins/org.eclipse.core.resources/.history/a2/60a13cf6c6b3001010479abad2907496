@@ -1,0 +1,12 @@
+package RubricaGUI;
+
+import java.awt.*;
+
+public class FinestraCerca extends Frame{
+	public FinestraCerca(){
+		setSize(300,300);
+		setLocation(100,100);
+		pack();
+		setVisible(true);
+	}
+}
